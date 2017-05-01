@@ -1,0 +1,334 @@
+{% load staticfiles %}
+<html>
+<head>
+<meta charset="utf-8">
+<title>About SSUNS 2017</title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/revolution-slider.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js' %}"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header">
+    	<div class="auto-container clearfix">
+        	<!--Logo-->
+            <div class="logo" ><a href="/" ><img style="padding: 5px 5px 5px 5px; max-height:70px; position: relative; top: 10px;" src="{% static 'images/icons/logo.png' %}" alt="SSUNS 2017" title="SSUNS 2017"></a></div>
+            <!-- need to debug shitty sizing issues for the logo -->
+            <!--Main Menu-->
+            <nav class="main-menu">
+                <div class="navbar-header">
+                    <!-- Toggle Button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse clearfix">
+                    <ul class="navigation">
+                      <li> <a href="/">Home</a>
+                             <!-- <ul class="submenu">!
+                                <li><a href="/">Home Style One</a></li>
+                                <li><a href="index-2.html">Home Style Two</a></li>
+                                <li><a href="index-3.html">Home Style Three</a></li>
+                            </ul> -->
+                        </li>
+                        <!-- About -->
+                        <li class="current dropdown"><a>About</a>
+                            <ul class="submenu">
+                                <li><a href="/about-ssuns/">SSUNS</a></li>
+                                <li><a href="/about-irsam/">IRSAM</a></li>
+                                <li><a href="/about-montreal/">Montreal</a></li>
+                            </ul>
+                        </li>
+                        <!-- The sec-->
+                        <li><a href="/team/">The Secretariat</a>
+                        <!-- committees -->
+                        <li class="dropdown"><a>Committees</a>
+                             <ul class="submenu">
+                                  <li><a href="/ga/">General Assemblies and ECOSOC</a></li>
+                                  <li><a href="/sa/">Specialized Agencies</a></li>
+                                  <li><a href="/crisis/">Crises</a></li>
+                            </ul>
+                        </li>
+                        <!-- Useful pages -->
+                        <li class="dropdown"><a>Conference</a>
+                            <ul class="submenu">
+                          <!--      <li><a href="resources.html">Resources</a></li> -->
+                                <li><a href="/faq/">FAQ</a></li>
+                                <!--<li><a href="schedule.html">Schedule</a></li>-->
+                                <li><a href="/travel/">Travel</a></li>
+                            </ul>
+                        </li>
+                          <!--  <ul class="submenu">
+                                <li><a href="speakers.html">Speakers Style One</a></li>
+                                <li><a href="speakers-2-col.html">Speakers Style Two</a></li>
+                                <li><a href="speakers-2-col-styled.html">Speakers Style Three</a></li>
+                                <li><a href="speakers-3-col.html">Speakers Style Four</a></li>
+                                <li><a href="speakers-3-col-styled.html">Speakers Style Five</a></li>
+                                <li><a href="single-speaker.html">Single Speaker</a></li>
+                            </ul> -->
+                        <!-- REgistration -->
+
+                        <li class="dropdown"><a>Registration</a>
+                            <ul class="submenu">
+                                <li><a href="/form/">Register Now</a></li>
+                                <li><a href="/reg/">Registration information</a></li>
+                            </ul>
+                        </li>
+                        <!-- Sponsors We'll introduce this later-->
+                        <!--<li ><a href="/sponsors/">Sponsors</a></li>-->
+
+                        <!-- Contact -->
+                        <li><a href="/contact/">Contact</a></li>
+                        <!-- The sec-->
+                        <li><a href="/sponsors/">Sponsors</a>
+                    </ul>
+                </div>
+            </nav>
+        <!--Main Menu End-->
+        </div>
+    </header>
+    <!--End Main Header -->
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image:url({% static "images/background/ssuns-about.jpg" %});">
+    	<div class="auto-container">
+        	<h1 style="color:rgb(0,12,132);  text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">About us</h1>
+        </div>
+    </section>
+
+    <!--Default Section-->
+    <section class="default-section padding-60">
+    	<div class="auto-container">
+            <div class="row clearfix">
+
+            	<article class="col-md-8 col-sm-6 col-xs-12 text-column wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                	<div class="inner">
+
+                        <div class="text">
+                          <h3> Our history </h3>
+                        	<p>It began with a simple idea. The hope was to create a place for high school students to explore the scope of global issues around them and to offer an opportunity for these students to take part as active young leaders. The reality has gone above and beyond the initial vision for Secondary Schools’ United Nations Symposium, and has only continued to expand and innovate in every possible capacity ever since.</p>
+                          <h3> For those new to our conference </h3>
+                          <p>The Secondary Schools' United Nations Symposium (SSUNS) is a Model United Nations conference in Montreal, Quebec. Our venue is the Hotel Centre Sheraton Montreal, and our conference will be from November 16-19 of this year.</p>
+                        </div>
+                	</div>
+                </article>
+
+                <article class="col-md-4 col-sm-6 col-xs-12 listing-column wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                	<div class="inner">
+                        <h3>Why join SSUNS 2017</h3>
+                        <div class="check-listing">
+                        	<ul>
+                            	<li>Get valuable leadership and public speaking experience</li>
+                                <li>Attend workshops planned specifically for you</li>
+                                <li>Get the support you need as a beginner!</li>
+                            </ul>
+                            <br>
+                            <a href="/reg/" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span> REGISTER NOW</a>
+                        </div>
+                	</div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--<section class="default-section padding-cust">-->
+          <!--<div class="auto-container">-->
+            <!--<div class="row clearfix">-->
+
+    <!--&lt;!&ndash;Two Column&ndash;&gt;-->
+    <!--<section class="two-column padding - 60">-->
+    	<!--<div class="auto-container">-->
+            <!--<div class="row clearfix">-->
+
+                <!--&lt;!&ndash;Image Side&ndash;&gt;-->
+                <!--<div class="col-md-6 col-sm-6 col-xs-12 pull-left image-side wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms" style="background-image:url(images/resource/columned-image-2.jpg);">-->
+
+                <!--</div>-->
+
+                <!--&lt;!&ndash;Content Side&ndash;&gt;-->
+                <!--<div class="col-md-6 col-sm-6 col-xs-12 pull-right content-side wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">-->
+                	<!--<h2>Our values</h2>-->
+
+                    <!--<article class="feature">-->
+                    	<!--<figure class="icon"><img src="{% static 'images/icons/icon-money.png' %}" alt="" title=""></figure>-->
+                        <!--<h3>Money transfer security</h3>-->
+						<!--<p>We believe that analysis of your company and your customers is key in responding effectively to your promotional needs and we will work with you.</p>-->
+                    <!--</article>-->
+
+                    <!--<article class="feature">-->
+                    	<!--<figure class="icon"><img src="{% static 'images/icons/icon-saving.png' %}" alt="" title=""></figure>-->
+                        <!--<h3>Speed up your creative workflow</h3>-->
+						<!--<p>Using the outcomes from the Company Analysis, we will put together a plan for the most effective marketing strategy.</p>-->
+                    <!--</article>-->
+
+                    <!--<article class="feature">-->
+                    	<!--<figure class="icon"><img src="{% static 'images/icons/icon-schedule.png' %}" alt="" title=""></figure>-->
+                        <!--<h3>The best marketing strategies</h3>-->
+						<!--<p>We will create a unique and visually pleasing logo to reflect your overall brand to be used in all areas of your marketing.</p>-->
+                    <!--</article>-->
+
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+
+
+   <br/> <br/>
+
+                <!--Main Footer-->
+                <footer class="main-footer">
+                    <!--Footer Upper-->
+                    <!--<div class="footer-upper">-->
+                    <!--<div class="auto-container">-->
+                    <!--<div class="row clearfix">-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">-->
+                    <!--<div class="footer-widget contact-widget">-->
+                    <!--<h3>Contact Us</h3>-->
+                    <!--<div class="text">If you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business.</div>-->
+                    <!--<ul class="info">-->
+                    <!--<li><strong>Email</strong> <a href="mailto:meeton@email.com">meeton@email.com</a></li>-->
+                    <!--<li><strong>Phone</strong> <a href="#">+49 123 456 789</a></li>-->
+                    <!--<li><strong>Fax</strong> +49 123 456 789</li>-->
+                    <!--<li><strong>Website</strong> <a href="http://www.envato.com">http://www.envato.com</a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                    <!--<div class="footer-widget services-widget">-->
+                    <!--<h3>Our Services</h3>-->
+                    <!--<ul class="links">-->
+                    <!--<li><a href="#">Startup &amp; business meetings</a></li>-->
+                    <!--<li><a href="#">Learning courses for beginners</a></li>-->
+                    <!--<li><a href="#">Phone calling conferences</a></li>-->
+                    <!--<li><a href="#">Business speeches &amp; presentations</a></li>-->
+                    <!--<li><a href="#">Clients &amp; customer meetings</a></li>-->
+                    <!--<li><a href="#">Rent a business conference room</a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">-->
+                    <!--<div class="footer-widget support-widget">-->
+                    <!--<h3>Our Support</h3>-->
+                    <!--<ul class="links">-->
+                    <!--<li><a href="#">How to get started?</a></li>-->
+                    <!--<li><a href="#">Frequently asked questions</a></li>-->
+                    <!--<li><a href="#">Customer testimonials</a></li>-->
+                    <!--<li><a href="#">Create a personal account</a></li>-->
+                    <!--<li><a href="#">Create a company account</a></li>-->
+                    <!--<li><a href="#">Help &amp; Support Center</a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">-->
+                    <!--<div class="footer-widget newsletter-widget">-->
+                    <!--<h3>Newsletter</h3>-->
+                    <!--<div class="text">We believe that analysis of your company and your customers is key in responding effectively.</div>-->
+
+                    <!--<div class="form">-->
+                    <!--<form method="post" action="/">-->
+                    <!--<div class="form-group">-->
+                    <!--<input type="email" name="email" value="" placeholder="Enter your email address" required autocomplete="off">-->
+                    <!--<button type="submit" name="submit" class="hvr-bounce-to-right"><span class="fa fa-paper-plane"></span></button>-->
+                    <!--</div>-->
+                    <!--</form>-->
+                    <!--</div>-->
+
+                    <!--<div class="social-links wow fadeInRight" data-wow-delay="1000ms" data-wow-duration="1500ms">-->
+                    <!--<a href="#"><span class="fa fa-facebook-f"></span></a>-->
+                    <!--<a href="#"><span class="fa fa-twitter"></span></a>-->
+                    <!--<a href="#"><span class="fa fa-google"></span></a>-->
+                    <!--<a href="#"><span class="fa fa-pinterest-p"></span></a>-->
+                    <!--<a href="#"><span class="fa fa-instagram"></span></a>-->
+                    <!--</div>-->
+
+                    <!--</div>-->
+                    <!--</div>-->
+
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+
+
+                    <!--Footer Lower-->
+                    <div class="footer-lower">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+
+                                <!--Footer Logo-->
+                                <!--<div class="col-md-4 col-sm-4 col-xs-12 footer-logo wow bounceInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                                <!--<a href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>-->
+                                <!--</div>-->
+
+                                <!--Footer Nav-->
+                                <div class="col-md-12 col-sm-8 col-xs-12 footer-nav wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <ul>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/about-ssuns/">About</a></li>
+                                        <li><a href="/team/">Team</a></li>
+                                        <li><a href="/faq/">FAQ</a></li>
+                                        <li><a href="/contact/">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Footer Bottom-->
+                    <div class="footer-bottom">
+                        <div class="auto-container">
+                            <div class="row clearfix">
+                                <div class="col-md-12 col-sm-12 col-xs-12 footer-logo">Copryright 2017 by SSUNS USG-IT | All rights reserved</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+
+   </div>
+   <!--End pagewrapper-->
+
+   <!--Scroll to top-->
+   <div class="scroll-to-top"></div>
+
+
+   <script src="{% static 'js/jquery.js' %}"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+   <script src="{% static 'js/revolution.min.js' %}"></script>
+   <script src="{% static 'js/bxslider.js' %}"></script>
+   <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+   <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+   <script src="{% static 'js/wow.js' %}"></script>
+   <script src="{% static 'js/jquery.countdown.js' %}"></script>
+   <script src="{% static 'js/script.js' %}"></script>
+   </body>
+   </html>

@@ -1,0 +1,215 @@
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>About Montreal</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/revolution-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js' %}"></script><![endif]-->
+    <!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header">
+        <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo" ><a href="/" ><img style="padding: 5px 5px 5px 5px; max-height:70px; position: relative; top: 10px;" src="{% static 'images/icons/logo.png' %}" alt="SSUNS 2017" title="SSUNS 2017"></a></div>
+            <!-- need to debug shitty sizing issues for the logo -->
+            <!--Main Menu-->
+            <nav class="main-menu">
+                <div class="navbar-header">
+                    <!-- Toggle Button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse clearfix">
+                    <ul class="navigation">
+                        <li> <a href="/">Home</a>
+                            <!-- <ul class="submenu">!
+                               <li><a href="/">Home Style One</a></li>
+                               <li><a href="index-2.html">Home Style Two</a></li>
+                               <li><a href="index-3.html">Home Style Three</a></li>
+                           </ul> -->
+                        </li>
+                        <!-- About -->
+                        <li class="current dropdown"><a>About</a>
+                            <ul class="submenu">
+                                <li><a href="/about-ssuns/">SSUNS</a></li>
+                                <li><a href="/about-irsam/">IRSAM</a></li>
+                                <li><a href="/about-montreal/">Montreal</a></li>
+                            </ul>
+                        </li>
+                        <!-- The sec-->
+                        <li><a href="/team/">The Secretariat</a>
+                            <!-- committees -->
+                        <li class="dropdown"><a>Committees</a>
+                            <ul class="submenu">
+                                <li><a href="/ga/">General Assemblies and ECOSOC</a></li>
+                                <li><a href="/sa/">Specialized Agencies</a></li>
+                                <li><a href="/crisis/">Crises</a></li>
+                            </ul>
+                        </li>
+                        <!-- Useful pages -->
+                        <li class="dropdown"><a>Conference</a>
+                            <ul class="submenu">
+                                <!--      <li><a href="resources.html">Resources</a></li> -->
+                                <li><a href="/faq/">FAQ</a></li>
+                                <!--<li><a href="schedule.html">Schedule</a></li>-->
+                                <li><a href="/travel/">Travel</a></li>
+                            </ul>
+                        </li>
+                        <!--  <ul class="submenu">
+                              <li><a href="speakers.html">Speakers Style One</a></li>
+                              <li><a href="speakers-2-col.html">Speakers Style Two</a></li>
+                              <li><a href="speakers-2-col-styled.html">Speakers Style Three</a></li>
+                              <li><a href="speakers-3-col.html">Speakers Style Four</a></li>
+                              <li><a href="speakers-3-col-styled.html">Speakers Style Five</a></li>
+                              <li><a href="single-speaker.html">Single Speaker</a></li>
+                          </ul> -->
+                        <!-- REgistration -->
+
+                        <li class="dropdown"><a>Registration</a>
+                            <ul class="submenu">
+                                <li><a href="/form/">Register Now</a></li>
+                                <li><a href="/reg/">Registration information</a></li>
+                            </ul>
+                        </li>
+                        <!-- Sponsors We'll introduce this later-->
+                        <!--<li ><a href="/sponsors/">Sponsors</a></li>-->
+
+                        <!-- Contact -->
+                        <li><a href="/contact/">Contact</a></li>
+                        <!-- The sec-->
+                        <li><a href="/sponsors/">Sponsors</a>
+                    </ul>
+                </div>
+            </nav>
+            <!--Main Menu End-->
+        </div>
+    </header>
+    <!--End Main Header -->
+    <!--url({% static "images/slider_1.jpg" %}-->
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image:url({% static "images/background/ssuns-montreal.jpg" %});">
+    <div class="auto-container">
+        <h1 style="color:rgb(0,12,132);  text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">About Montreal</h1>
+    </div>
+    </section>
+
+    <!--Default Section-->
+    <section class="default-section padding-60">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <article class="col-md-12 col-sm-6 col-xs-12 text-column wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="inner">
+                        <div class="text">
+                            <p>Montréal is the largest city in Québec. Predominantly French-speaking, it’s set on an island in the Saint Lawrence River and named after Mt. Royal, the triple-peaked hill at its heart.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="default-section padding-60" style="height:200px">
+    </section>
+
+
+    <!--Sponsors-->
+    <section class="sponsors">
+        <div class="auto-container">
+            <ul class="slider"> -
+                <li><a href="#"><img src="{% static 'images/sponsors/huron.png' %}" alt="huron" title=""></a></li>
+                <li><a href="#"><img src="{% static 'images/sponsors/concordia.png' %}" alt="concordia" title=""></a></li>
+                <li><a href="#"><img src="{% static 'images/sponsors/durham.png' %}" alt="durham" title=""></a></li>
+                <li><a href="#"><img src="{% static 'images/travel/viarail.png' %}" alt="viarail" title=""></a></li>
+                <li><a href="#"><img src="{% static 'images/travel/westjet.png' %}" alt="westjet" title=""></a></li>
+                <!--<li><a href="#"><img src="{% static 'images/clients/logo-1.png' %}" alt="" title=""></a></li>-->
+                <!--<li><a href="#"><img src="{% static 'images/clients/logo-2.png' %}" alt="" title=""></a></li>-->
+                <!--<li><a href="#"><img src="{% static 'images/clients/logo-3.png' %}" alt="" title=""></a></li>-->
+                <!--<li><a href="#"><img src="{% static 'images/clients/logo-4.png' %}" alt="" title=""></a></li>-->
+                <!--<li><a href="#"><img src="{% static 'images/clients/logo-5.png' %}" alt="" title=""></a></li>-->
+            </ul>
+            <br>
+        </div>
+    </section>
+
+    <!--Main Footer-->
+    <footer class="main-footer">
+
+
+        <!--Footer Lower-->
+        <div class="footer-lower">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Footer Logo-->
+                    <!--<div class="col-md-4 col-sm-4 col-xs-12 footer-logo wow bounceInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                    <!--<a href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>-->
+                    <!--</div>-->
+
+                    <!--Footer Nav-->
+                    <div class="col-md-12 col-sm-8 col-xs-12 footer-nav wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about-ssuns/">About</a></li>
+                            <li><a href="/team/">Team</a></li>
+                            <li><a href="/faq/">FAQ</a></li>
+                            <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-sm-12 col-xs-12 footer-logo">Copryright 2017 by SSUNS USG-IT | All rights reserved</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top"></div>
+
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/revolution.min.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

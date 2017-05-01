@@ -1,0 +1,642 @@
+{% load staticfiles %}
+<html>
+<head>
+<meta charset="utf-8">
+<title>General Assemblies and ECOSOC</title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/revolution-slider.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js' %}"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header">
+    	<div class="auto-container clearfix">
+        	<!--Logo-->
+            <div class="logo" ><a href="/" ><img style="padding: 5px 5px 5px 5px; max-height:70px; position: relative; top: 10px;" src="{% static 'images/icons/logo.png' %}" alt="SSUNS 2017" title="SSUNS 2017"></a></div>
+            <!-- need to debug shitty sizing issues for the logo -->
+            <!--Main Menu-->
+            <nav class="main-menu">
+                <div class="navbar-header">
+                    <!-- Toggle Button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse clearfix">
+                    <ul class="navigation">
+                      <li> <a href="/">Home</a>
+                             <!-- <ul class="submenu">!
+                                <li><a href="/">Home Style One</a></li>
+                                <li><a href="index-2.html">Home Style Two</a></li>
+                                <li><a href="index-3.html">Home Style Three</a></li>
+                            </ul> -->
+                        </li>
+                        <!-- About -->
+                        <li class="dropdown"><a>About</a>
+                            <ul class="submenu">
+                                <li><a href="/about-ssuns/">SSUNS</a></li>
+                                <li><a href="/about-irsam/">IRSAM</a></li>
+                                <li><a href="/about-montreal/">Montreal</a></li>
+                            </ul>
+                        </li>
+                        <!-- The sec-->
+                        <li><a href="/team/">The Secretariat</a>
+                        <!-- committees -->
+                        <li class="current dropdown"><a>Committees</a>
+                             <ul class="submenu">
+                                  <li><a href="/ga/">General Assemblies and ECOSOC</a></li>
+                                  <li><a href="/sa/">Specialized Agencies</a></li>
+                                  <li><a href="/crisis/">Crises</a></li>
+                            </ul>
+                        </li>
+                        <!-- Useful pages -->
+                        <li class="dropdown"><a>Conference</a>
+                            <ul class="submenu">
+                          <!--      <li><a href="resources.html">Resources</a></li> -->
+                                <li><a href="/faq/">FAQ</a></li>
+                                <!--<li><a href="schedule.html">Schedule</a></li>-->
+                                <li><a href="/travel/">Travel</a></li>
+                            </ul>
+                        </li>
+                          <!--  <ul class="submenu">
+                                <li><a href="speakers.html">Speakers Style One</a></li>
+                                <li><a href="speakers-2-col.html">Speakers Style Two</a></li>
+                                <li><a href="speakers-2-col-styled.html">Speakers Style Three</a></li>
+                                <li><a href="speakers-3-col.html">Speakers Style Four</a></li>
+                                <li><a href="speakers-3-col-styled.html">Speakers Style Five</a></li>
+                                <li><a href="single-speaker.html">Single Speaker</a></li>
+                            </ul> -->
+                        <!-- REgistration -->
+
+                        <li class="dropdown"><a>Registration</a>
+                            <ul class="submenu">
+                                <li><a href="/form/">Register Now</a></li>
+                                <li><a href="/reg/">Registration information</a></li>
+                            </ul>
+                        </li>
+                        <!-- Sponsors We'll introduce this later-->
+                        <!--<li ><a href="/sponsors/">Sponsors</a></li>-->
+
+                        <!-- Contact -->
+                        <li><a href="/contact/">Contact</a></li>
+                        <!-- The sec-->
+                        <li><a href="/sponsors/">Sponsors</a>
+                    </ul>
+                </div>
+            </nav>
+        <!--Main Menu End-->
+        </div>
+    </header>
+    <!--End Main Header -->
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image:url({% static "images/background/general.jpg" %});">
+    	<div class="auto-container">
+            <h2 style="color:rgb(0,12,132);  text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">General Assemblies and the Economic and Social Council</h2>
+        </div>
+    </section>
+
+    <!-- #Testimonial-V2 -->
+    <section id="blog-post" class="testimonials_v2">
+        <div class="container">
+            <div class="row">
+                <!-- .Testimonial-content -->
+                <div class="col-lg-12 testimonials_v2_content">
+
+                    <!-- article -->
+                    <article>
+                       <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_client">
+                                        <div class="row">
+                                          <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/World Water Forum/Dais Photo_Kieran.jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/World Water Forum/2016-09-22 02.28.30 (1).jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/World Water Forum/large3.jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/World Water Forum/Dais Photo Ananya.png' %}" alt="">
+
+                                          </div>
+                                          <div class="col-med-3 single_client_left">
+                                            <br>
+                                              <h5> Kieran Sharma (chair), Anastasia Rewers-Kusiak (vice chair), Sophie Zhao (vice chair), Ananya Vijay (vice chair)</h5>
+                                              <h4>World Water Forum</h4>
+                                          </div>
+                                          <div class="col-lg-12 single_client_right">
+                                              <p> Water is the foundation of life on Earth. It covers 70% of the planet’s surface, yet just 3% of the world’s water is fresh water, and two-thirds of that is unavailable for human use. With an ever-growing population and the continued escalation of climate change and water pollution, water systems are becoming increasingly stressed, and water scarcity represents one of the defining plights of our time. An estimated 1.2 billion people worldwide lack access to water, and a staggering 2.8 billion find water scarce for at least one month of the year. Lack of access to clean water not only sets back several pillars of human development – including education, health, and food security – but is also likely to initiate and intensify interregional conflicts. Water issues are not matters of a single region or nation, but necessitate global solidarity and joint counter-measures. </p>
+                                                <p>Now in its eighth session, the World Water Forum is the largest international event focused on discussing and tackling issues surrounding water. It represents a unique multistakeholder platform on which policymakers from around the globe can collaborate to counter water shortage and its aftermath. In this committee, we will address three critical issues. The first is the development of novel technologies to ensure the sustainability of water resources. Here, delegates will be tasked with devising and implementing new strategies to limit water consumption while maximizing returns for the global population. The second topic will address international security and conflict as it relates to water scarcity. Delegates will explore countries’ struggles in accessing water resources, and how these struggles have expanded to the international scale. Finally, we will discuss the plausibility of ocean privatization as a potential solution to the classic “tragedy of the commons” issue that has resulted in widespread pollution of international waters and the depletion of fisheries. We look forward to a stimulating and productive forum that will result in positive action on these pivotal water issues.
+                                                 </p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_client">
+                                        <div class="row">
+                                          <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/SPECPOL/Koray_Demir_Photograph_2.jpeg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/SPECPOL/Melisa Demir.jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/SPECPOL/AJ Headshot.jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/SPECPOL/Jacklyn Dias Photo.jpg' %}" alt="">
+
+                                          </div>
+                                          <div class="col-med-3 single_client_left">
+                                            <br>
+                                              <h5> Koray Demir (chair), Andrew Juhasz (vice chair), Melisa Demir (vice chair), Jacklyn Chan (vice chair)</h5>
+                                              <h4>Special Political and Decolonization Committee</h4>
+                                          </div>
+                                          <div class="col-lg-12 single_client_right">
+                                              <p> The Special, Political and Decolonization Committee (SPECPOL) is one of the United Nations’ core general assemblies. Its flexible mandate includes many diverse topics, from land mine clearance to radioactive accidents and global peacekeeping operations. These themes combine frameworks and ideas in human rights, international relations and social justice. Within SPECPOL, idealism and pragmatism are in a constant push-and-pull to reach realistic, but effective, solutions. </p>
+                                                <p>As a large committee dealing with sensitive and often controversial issues, delegates will be required to play their cards carefully, and combine strong research with diplomatic discussion in order to progress. </p>
+                                                <p>Our team looks forward to seeing how you will, together, think of solutions to some of the most challenging topics in global affairs today.  </p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_client">
+                                        <div class="row">
+                                          <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Refugees and Migrants/Emma McInerney Photo.jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Refugees and Migrants/Eric McMUN (old photo for now oops).jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Refugees and Migrants/Shivang Mahajan Photo.jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Refugees and Migrants/12357610_473314369518861_1238132108_n(1).jpg' %}" alt="">
+
+                                          </div>
+                                          <div class="col-med-3 single_client_left">
+                                            <br>
+                                              <h5> Emma McInerney (chair), Eric Sun (vice chair), Shivang Mahajan (vice chair), Syed Aleemuddin Alavi (vice chair)</h5>
+                                              <h4>United Nations General Assembly Refugees and Migrants</h4>
+                                          </div>
+                                          <div class="col-lg-12 single_client_right">
+                                              <p> The United Nations General Assembly (UNGA) is one of the six principal sections of the United Nations, and the only one that holds equal representation of all 193 UN member states.  This General Assembly is the main deliberative, policymaking, and representative organ of the UN.  Unique circumstances or times of crisis allow the UNGA to convene Special Sessions at the request of the UN Security Council or a majority of UN members.  In the recent past, Special Sessions of the UN have been held to put forward the Millennium Development Goals, to combat the HIV/AIDS crisis of 2001, and to celebrate the UN’s 60th anniversary.  At SSUNS 2017, the UNGA will hold a Special Session on Refugees and Migrants, to discuss proposals for combatting the ever-rising number of refuges and displaced people fleeing their homeland.  This committee will address three specific areas of today’s migratory crisis: a plan to assist the growing number of people displaced by climate change and environmental disasters, safety and welfare management in refugee camps, and humanitarian aid protocols for refugees escaping terrorism.  We’re looking forward to witnessing an engaging and productive debate on these complex and pressing issues.
+ </p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_client">
+                                        <div class="row">
+                                          <div class="row">
+                                            <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/WTO 2001/GlusteinHeadshot1.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/WTO 2001/Linkedin Picture.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/WTO 2001/Julia Dais Photo.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/WTO 2001/Aritra Dias Photo.jpg' %}" alt="">
+
+                                            </div>
+                                            <div class="col-med-3 single_client_left">
+                                              <br>
+                                                <h5> Jonathan Glustein (chair), Saad Sahid (vice chair), Julia Nguyen (vice chair), Aritra Samanta (vice chair)</h5>
+                                                <h4>WTO 2001</h4>
+                                            </div>
+                                            <div class="col-lg-12 single_client_right">
+                                                <p> The World Trade Organization is the international organization responsible for the creation, regulation and mediation of trade. It’s functions range from enforcement of trade liberalization to resolving trade disputes between governments. This committee is set in 2001, an incredibly exciting for global economic governance and the pursuit of increasing trade and market liberalization. China’s ascent to the World Trade Organization, intellectual property rights, and agricultural policy are all on the line as delegates will be challenged to find solutions to imbalances and issues in the world economy. The Doha Development Round made some significant progress, but history will be yours to rewrite- can you bring us closer to true global economic integration?
+   </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_client">
+                                        <div class="row">
+                                          <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/CSTD/Orla_Mahon_CSTD.jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/CSTD/Austin_McDougall_CSTD.png' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/CSTD/Shubhanker_Joshi_CSTD.jpg' %}" alt="">
+                                              <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/CSTD/Emily_Xing_CSTD.jpg' %}" alt="">
+
+                                          </div>
+                                          <div class="col-med-3 single_client_left">
+                                            <br>
+                                              <h5> Orla Mahon (chair), Austin McDougall (vice chair), Shubhanker Joshi(vice chair), Emily Xing (vice chair)</h5>
+                                              <h4>Commission on Science and Technology</h4>
+                                          </div>
+                                          <div class="col-lg-12 single_client_right">
+                                              <p> The
+United
+Nations
+Commission
+on
+Science
+and
+Technology
+for
+Development
+is
+a
+subsidiary
+body
+of
+the
+Economic
+and
+Social
+Council
+that
+regularly
+meets
+to
+examine
+reports
+from
+ad
+hoc
+panels
+and
+workshops
+containing
+specialized
+and
+technical
+advice
+that
+is
+then
+used
+to
+inform
+policy
+recommendations
+to
+the
+ECOSOC
+and
+the
+General
+Assembly.
+Made
+up
+of
+43
+representatives
+of
+nations
+from
+across
+the
+Globe,
+these
+individuals,
+nominated
+by
+their
+respective
+governments,
+are
+leaders
+within
+their
+respective
+fields
+and
+possess
+the
+incredible
+professional
+and
+scientific
+knowledge
+necessary
+for
+this
+position.
+This
+2017
+assembly
+of
+the
+CSTD
+will
+focus
+on
+the
+pressing
+issues
+facing
+Science
+and
+Technology
+in
+Agriculture,
+the
+continuing
+struggle
+to
+have
+Accessible
+Digital
+Development
+and
+the
+future
+prospect
+of
+Smart
+Cities
+and
+Infrastructure.
+Delegates,
+we
+look
+forward
+to
+seeing
+what
+you
+bring
+to
+the
+table
+and
+how
+your
+Scientific
+decisions
+will
+shape
+the world.
+ </p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_client">
+                                        <div class="row">
+                                          <div class="row">
+                                            <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Latin America/Emily Rea Headshot1.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Latin America/Naomi Dais Pic.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Latin America/IMG_8814.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Latin America/Sarim Picture.jpg' %}" alt="">
+
+                                            </div>
+                                            <div class="col-med-3 single_client_left">
+                                              <br>
+                                                <h5> Emily Rea (chair), Naomi Santesteban (vice chair), Pedro Zaya (vice chair), Sarim Malik (vice chair)</h5>
+                                                <h4>United Nations Latin America</h4>
+                                            </div>
+                                            <div class="col-lg-12 single_client_right">
+                                                <p> The Economic Commission of Latin America was created by the UN Economic and Social Council in 1948, and later expanded to include the countries of the Caribbean, changing its name to the Economic Commission for Latin America and the Caribbean (ECLAC) in 1984. ECLAC is headquartered in Santiago, Chile, and is one of the five regional commissions of the United Nations. There are 45 member states, comprised of the 33 countries of Latin America and the Caribbean and 12 Asian, European, and North American countries that have ties to the region. </p><p>ECLAC is charged with contributing to the economic and social development of Latin America and the Caribbean, primarily through research and recommendation of best practices, advising regional governments, promoting regional cooperation, and bringing a regional perspective to global forums.
+</p> <p>This committee will discuss three issues of major importance to the region: education, the repurposing of drug fields, and expanding Mercosur. Improving educational attainment in Latin America and the Caribbean is essential to the development of regional economies. In particular, this committee will focus on education in rural areas and for women. Many rural economies in Central and South America are heavily dependent on drug production. This committee will discuss ways to repurpose fields used for drug production in order to lessen the dependence of rural economies on the drug trade. Finally, the committee will discuss how to integrate regional economies, including the potential expansion of Mercosur.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_client">
+                                        <div class="row">
+                                          <div class="row">
+                                            <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UNEP/Dais Photo - Esli.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UNEP/Dais Photo - Zoe.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UNEP/DaisPhoto - Charlotte.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UNEP/DaisPhoto - Monique.jpg' %}" alt="">
+
+                                            </div>
+                                            <div class="col-med-3 single_client_left">
+                                              <br>
+                                                <h5> Esli Chan (chair), Zoe Poole (vice chair), Charlotte Koch (vice chair), Monique Morin (vice chair)</h5>
+                                                <h4>United Nations Environment Programme</h4>
+                                            </div>
+                                            <div class="col-lg-12 single_client_right">
+                                                <p> The United Nations Environment Programme (UN Environment) is a multi-faceted institution that focuses on all aspects of development and sustainable environmental growth. With its founding in 1972, the UN Environment has tackled and overcome many global obstacles – from addressing concerns of disappearing glaciers to capitalizing on innovative environment-friendly transportation methods. Notably, the UN Environment has also successfully designed and proposed the Montreal Protocol that has gained international widespread recognition and awareness. This Protocol focuses on the challenges of ozone depletion and international resolutions to the management of chlorofluorocarbons.  In addition, the United Nations Environment Programme has been a crucial support for the Sustainable Development Goals 2030 Agenda that moves for accountable governance and environment-conscious frameworks. This Programme is made up of a plethora of diverse members which adds to its strength in finding comprehensive solutions to global issues and its ability to find methods that are aware of the customs and characteristics of each member state.  The UN Environment Programme is truly a testament to successful international cooperation and displays global initiative and empowerment towards a more sustainable and cooperative planet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="single_client">
+                                        <div class="row">
+                                          <div class="row">
+                                            <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Crime Prevention/Malina Photo.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Crime Prevention/Catherine photo.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Crime Prevention/Maya Photo.jpg' %}" alt="">
+                                                <img style="max-height: 163px" src="{% static 'images/committees/GA-ecosocs/UN Crime Prevention/Photo Jan 30, 4 03 43 PM.jpg' %}" alt="">
+
+                                            </div>
+                                            <div class="col-med-3 single_client_left">
+                                              <br>
+                                                <h5> Malina Gilka (chair), Catherine Sun (vice chair), Maya Krishna-Rogers (vice chair), Albert Gunner (vice chair)</h5>
+                                                <h4>United Nations Crime Prevention</h4>
+                                            </div>
+                                            <div class="col-lg-12 single_client_right">
+                                                <p> Welcome to the 13th United Nations Congress on Crime Prevention and Criminal Justice. The purpose of this congress is to shape the agenda and standards on crime prevention and criminal justice within the UN. This quinquennial event brings together UN member nations to highlight important issues in international crime. This historical conference originally began in 1872 under the International Penal and Penitentiary Commission (IPPC) and focuses on creating effective criminal justice systems crucial for sustainable development, civil society and the rule of law. International cooperation amongst member nations is essential to implementing comprehensive policies to deter crime. These congresses have taken place around the world, from Kyoto to Caracas and Milan; delegates seek to recommend methods to take action against crime. </p>
+
+<p>At SSUNS 2017 the UN Congress on Crime Prevention and Criminal Justice will open the floor to discussion on three distinct topics in crime prevention:  sexual violence as a weapon of war, maritime law and piracy, and ethnic conflict. Delegates should look to develop comprehensive and balanced solutions to effectively respond to the topics at hand. We are excited to see the opinions and solutions that delegates will bring to solving these complex cases. As the ninth congress in Cairo stated, we hope to “seek security and justice for all.” We look forward to meeting you!
+   </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+
+<br><br>
+
+                    </article> <!-- /article -->
+
+
+
+                </div> <!-- /.Testimonial-V2 -->
+
+
+            </div>
+        </div>
+    </section> <!-- /#Testimonial-V2 -->
+
+    <br/><br/>
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <!--Footer Upper-->
+        <!--<div class="footer-upper">-->
+            <!--<div class="auto-container">-->
+                <!--<div class="row clearfix">-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget contact-widget">-->
+                            <!--<h3>Contact Us</h3>-->
+                            <!--<div class="text">If you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business.</div>-->
+                            <!--<ul class="info">-->
+                                <!--<li><strong>Email</strong> <a href="mailto:meeton@email.com">meeton@email.com</a></li>-->
+                                <!--<li><strong>Phone</strong> <a href="#">+49 123 456 789</a></li>-->
+                                <!--<li><strong>Fax</strong> +49 123 456 789</li>-->
+                                <!--<li><strong>Website</strong> <a href="http://www.envato.com">http://www.envato.com</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget services-widget">-->
+                            <!--<h3>Our Services</h3>-->
+                            <!--<ul class="links">-->
+                                <!--<li><a href="#">Startup &amp; business meetings</a></li>-->
+                                <!--<li><a href="#">Learning courses for beginners</a></li>-->
+                                <!--<li><a href="#">Phone calling conferences</a></li>-->
+                                <!--<li><a href="#">Business speeches &amp; presentations</a></li>-->
+                                <!--<li><a href="#">Clients &amp; customer meetings</a></li>-->
+                                <!--<li><a href="#">Rent a business conference room</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget support-widget">-->
+                            <!--<h3>Our Support</h3>-->
+                            <!--<ul class="links">-->
+                                <!--<li><a href="#">How to get started?</a></li>-->
+                                <!--<li><a href="#">Frequently asked questions</a></li>-->
+                                <!--<li><a href="#">Customer testimonials</a></li>-->
+                                <!--<li><a href="#">Create a personal account</a></li>-->
+                                <!--<li><a href="#">Create a company account</a></li>-->
+                                <!--<li><a href="#">Help &amp; Support Center</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget newsletter-widget">-->
+                            <!--<h3>Newsletter</h3>-->
+                            <!--<div class="text">We believe that analysis of your company and your customers is key in responding effectively.</div>-->
+
+                            <!--<div class="form">-->
+                                <!--<form method="post" action="/">-->
+                                    <!--<div class="form-group">-->
+                                        <!--<input type="email" name="email" value="" placeholder="Enter your email address" required autocomplete="off">-->
+                                        <!--<button type="submit" name="submit" class="hvr-bounce-to-right"><span class="fa fa-paper-plane"></span></button>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+
+                            <!--<div class="social-links wow fadeInRight" data-wow-delay="1000ms" data-wow-duration="1500ms">-->
+                                <!--<a href="#"><span class="fa fa-facebook-f"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-twitter"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-google"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-pinterest-p"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-instagram"></span></a>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+        <!--Footer Lower-->
+        <div class="footer-lower">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Footer Logo-->
+                    <!--<div class="col-md-4 col-sm-4 col-xs-12 footer-logo wow bounceInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                        <!--<a href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>-->
+                    <!--</div>-->
+
+                    <!--Footer Nav-->
+                    <div class="col-md-12 col-sm-8 col-xs-12 footer-nav wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/about-ssuns/">About</a></li>
+                          <li><a href="/team/">Team</a></li>
+                          <li><a href="/faq/">FAQ</a></li>
+                          <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-sm-12 col-xs-12 footer-logo">Copryright 2017 by SSUNS USG-IT | All rights reserved</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top"></div>
+
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/revolution.min.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

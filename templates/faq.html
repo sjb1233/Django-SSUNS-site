@@ -1,0 +1,484 @@
+{% load staticfiles %}
+<html>
+<head>
+<meta charset="utf-8">
+<title>FAQ</title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/revolution-slider.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js' %}"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header">
+    	<div class="auto-container clearfix">
+        <!--Logo-->
+          <div class="logo" ><a href="/" ><img style="padding: 5px 5px 5px 5px; max-height:70px; position: relative; top: 10px;" src="{% static 'images/icons/logo.png' %}" alt="SSUNS 2017" title="SSUNS 2017"></a></div>
+          <!-- need to debug shitty sizing issues for the logo -->
+          <!--Main Menu-->
+          <nav class="main-menu">
+              <div class="navbar-header">
+                  <!-- Toggle Button -->
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+
+              <div class="navbar-collapse collapse clearfix">
+                  <ul class="navigation">
+                    <li> <a href="/">Home</a>
+                           <!-- <ul class="submenu">!
+                              <li><a href="/">Home Style One</a></li>
+                              <li><a href="index-2.html">Home Style Two</a></li>
+                              <li><a href="index-3.html">Home Style Three</a></li>
+                          </ul> -->
+
+                      </li>
+                      <!-- About -->
+                      <li class="dropdown"><a>About</a>
+                          <ul class="submenu">
+                              <li><a href="/about-ssuns/">SSUNS</a></li>
+                              <li><a href="/about-irsam/">IRSAM</a></li>
+                              <li><a href="/about-montreal/">Montreal</a></li>
+                          </ul>
+                      </li>
+                      <!-- The sec-->
+                      <li><a href="/team/">The Secretariat</a>
+                      <!-- committees -->
+                      <li class="dropdown"><a>Committees</a>
+                           <ul class="submenu">
+                                <li><a href="/ga/">General Assemblies and ECOSOC</a></li>
+                                <li><a href="/sa/">Specialized Agencies</a></li>
+                                <li><a href="/crisis/">Crises</a></li>
+                          </ul>
+                      </li>
+                      <!-- Useful pages -->
+                      <li class="current dropdown"><a>Conference</a>
+                          <ul class="submenu">
+                            <!--  <li><a href="resources.html">Resources</a></li>-->
+                              <li><a href="/faq/">FAQ</a></li>
+                              <!--<li><a href="schedule.html">Schedule</a></li>-->
+                              <li><a href="/travel/">Travel</a></li>
+                          </ul>
+                      </li>
+                        <!--  <ul class="submenu">
+                              <li><a href="speakers.html">Speakers Style One</a></li>
+                              <li><a href="speakers-2-col.html">Speakers Style Two</a></li>
+                              <li><a href="speakers-2-col-styled.html">Speakers Style Three</a></li>
+                              <li><a href="speakers-3-col.html">Speakers Style Four</a></li>
+                              <li><a href="speakers-3-col-styled.html">Speakers Style Five</a></li>
+                              <li><a href="single-speaker.html">Single Speaker</a></li>
+                          </ul> -->
+                      <!-- REgistration -->
+
+                      <li class="dropdown"><a>Registration</a>
+                          <ul class="submenu">
+                              <li><a href="/form/">Register Now</a></li>
+                              <li><a href="/reg/">Registration information</a></li>
+                          </ul>
+                      </li>
+                      <!-- Sponsors We'll introduce this later-->
+                      <!--<li ><a href="/sponsors/">Sponsors</a></li>-->
+
+                      <!-- Contact -->
+
+                      <li><a href="/contact/">Contact</a></li>
+                      <!-- The sec-->
+                      <li><a href="/sponsors/">Sponsors</a>
+
+
+                  </ul>
+              </div>
+          </nav>
+        <!--Main Menu End-->
+        </div>
+    </header>
+  <!--End Main Header -->
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image:url({% static "images/FAQS/banner.jpg" %});">
+    	<div class="auto-container">
+        	<h1 style="color:rgb(0,12,132);  text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Frequently Asked Questions</h1>
+        </div>
+    </section>
+
+	<!-- Blog Section Begins -->
+    <section id="blog" class="blog-area single section faq">
+        <div class="auto-container">
+            <div class="row">
+                <!-- .faq-content -->
+
+                    <!-- article -->
+                    <article>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="general-question popular-question">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="general-question">
+                                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading headback" role="tab" id="headingOne">
+                                                          <h3 style="color:rgb(95,166,255);" style="color:rgb(0,12,132);" class="panel-title" >
+                                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                              Preparing for the conference
+                                                            </a>
+                                                          </h3>
+                                                        </div>
+                                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);" style="color:rgb(0,12,132);"> I have received my committee and country/character assignment. What do I do now?<br></h4>
+                                                                <p>As one of your first steps, we highly recommend that you check out your committee’s background guide on our committee page that your Daises have put much effort into composing. The background guide will have outlined and explained a number of topics that you will be debating at the conference. It is helpful to know your committee’s history, current events, and other subject matter that you think will be relevant during debate. Keep in mind that it is your responsibility to thoroughly research your character or country, such as their position in terms of the topics, their allies, policies, etc. A thoroughly researched delegate is often the well-spoken delegate, as it will reflect in your speeches and interactions with your fellow delegates. Your position paper is due November 10th, 2017. Please look at position paper guidelines below for more information.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">I have a question about my country/character or my committee. Who do I contact?<br></h4>
+                                                                <p>If you wish to clarify something about your characters, committee or information on the background guide, please contact your Chair at the respective committee’s email address. You can find the individual committee emails on our committee page, by clicking on the appropriate committee. Also don’t forget to consult the committee background guide first if you have questions about research. Most Daises have already listed Questions to Consider and Helpful Research Links as part of their background guides.</p>
+                                                            </div>
+                                                          </div><div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">What other activities does SSUNS 2017 offer outside of committee sessions?<br></h4>
+                                                                <p>SSUNS this year offers a variety of stimulating and exclusive events such There will be seminars offered to interested delegates on everything from student journalism to photography to sustainability to charity work. We will be hosting skills-building session for students looking to learn about the college application process, essay writing, the transition to university life, building a CV, preparing for LSATs, and networking successfully.</p>
+                                                            </div>
+                                                          </div><div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Is there a dress code?<br></h4>
+                                                                <p>All participants at SSUNS are required to wear full western business attire. We urge you to adhere to the dress code for all SSUNS events, such as the Opening/Closing ceremonies, committee sessions, public events, excluding the delegate social event and unless otherwise directed by your Dais. For the Delegate Gala, please use your discretion in dressing casually but appropriately. SSUNS staff reserves the right to remove delegates dressed inappropriately or offensively for the delegate social event.</p>
+                                                            </div>
+                                                          </div><div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Can I bring my own laptop?<br></h4>
+                                                                <p>Yes! Although it’s not mandatory, it is recommended that you bring your own computer to research, draft working papers, etc. outside of your committee sessions. Usage of laptops or portable electronic devices during sessions is subject to the individual discretion of Daises and it may be prohibited during selective or all committee sessions. There will be also computers available for conference-related uses such as research in our Delegate Resource Centre.</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                                          <h3 style="color:rgb(95,166,255);" style="color:rgb(0,12,132);" class="panel-title">
+                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                              Position papers
+                                                            </a>
+                                                          </h3>
+                                                        </div>
+                                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">What is a position paper?<br></h4>
+                                                                <p>All SSUNS delegates are required to submit a position paper prior to the conference (with the exception of selective Crisis committee delegates). There is a section in your background guide for Questions to Consider and/or Helpful Links that will help you get your research started. Also don’t forget to check out our Delegate Resources page for more tips! It is a research essay detailing your country or character’s position in your committee, specifically on the topics outlined in the background guide. We urge you to avoid reiterating information already elaborated in the background guide, except for when explaining their significance to your specific character or pointing out something you wish to underscore during the committee debate. Having a well-written position paper will help you organize your research, become familiarized with your character, and enhance your delegate experience throughout the conference.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">When is my position paper due?<br></h4>
+                                                                <p>It is due at 11:59PM on November 16th, 2017. It is always a good idea to submit it in advance. Feel free to email your Daises any questions regarding your position paper, but allow sufficient time before the deadline to ensure you receive feedback!</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">How do I submit it?<br></h4>
+                                                                <p>Please submit the position paper via the dashboard. The document should be in docx. or pdf. format.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Are there any rules??<br></h4>
+                                                                <p>While we do not provide specific format guidelines for individual position papers, every position paper should be written in coherence to a formal academic paper you would normally submit at your school. We urge you to use your discretion in determining the appropriate format of the paper. On another note, SSUNS has a very strict plagiarism policy. You must take care to acknowledge any ideas or information obtained from the work of others in your paper. You may check out our Delegate Resources page for more information on how to cite. Please refer to McGill University’s Code of Student Conduct and Disciplinary Procedures on Plagiarism for further clarification: Article 16. Plagiarism “Plagiarism” means the representation of another’s work, published or unpublished, as one’s own or assisting another in representing another’s work, published or unpublished, as his or her own. (a) No student shall represent another person’s work, published or unpublished, as his or her own in any academic writing […], or represent as his or her own the work of another, whether the material so represented constitutes a part or the entirety of the work submitted.</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingThree">
+                                                          <h3 style="color:rgb(95,166,255);" style="color:rgb(0,12,132);" class="panel-title">
+                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                              Awards policy
+                                                            </a>
+                                                          </h3>
+                                                        </div>
+                                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Awards?<br></h44>
+                                                                <p>SSUNS prides itself on providing a friendly learning environment for all delegates alike. Hence each year, SSUNS wishes to acknowledge exceptional delegates and delegations who enrich the educational experience for their peer delegates and embody our theme of advocacy, peacemaking and diplomacy. We have two categories of awards as further described below: Individual Awards and Delegation Awards. All Individual Gavel Awards are given equal weight and they are not ranked in order.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Types of awards?<br></h44>
+                                                                <p>COMING SOON</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingThree">
+                                                          <h3 style="color:rgb(95,166,255);" style="color:rgb(0,12,132);" class="panel-title">
+                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                                              During the conference
+                                                            </a>
+                                                          </h3>
+                                                        </div>
+                                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Delegate Resouce Centre <br></h4>
+                                                                <p>Our Delegate Resource Centre (DRC) is responsible for answering any questions about SSUNS and the city of Montréal during the conference. It is open from 9:30 AM and closes with the end of the last committee session each day. Please consult your Delegate Handbook for its exact location.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">What do Room Blocks Mean? <br></h4>
+                                                                <p>In order to facilitate travel in hallways, to/from rooms, elevators and escalators before and after committee sessions during the conference, we have organized each committee into Block A or Block B. Being in Block A simply means that you will be starting your committee sessions 15 minutes earlier and end as much earlier than Block B. You can check which Block you belong to in your delegate handbook.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Is there wifi?<br></h4>
+                                                                <p>There will be complimentary wifi available for delegates on the Conference Level. Please refer to the PR updates at the Opening Ceremonies or visit the Delegate Resource Centre for the password. We urge you to refrain from remaining connected from several devices simultaneously in order to maintain satisfactory traffic for all attendees and staff. There is wifi in your hotel rooms as well, for which you do not need a password to access.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">I lost my name tag. Where do I go?<br></h4>
+                                                                <p>You need your name tag for admission into any event during the conference and to receive discounts at selective partner restaurants. If you lose your name tag, check in at the Delegate Resource Centre to see if it has been turned in, or provide the following information for a replacement.
+                                                                  <br>•	Full Name
+                                                                  <br>•	School Name
+                                                                  <br>•	Committee Name
+                                                                  <br>•	Name of Position</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);"> Where is the Lost and Found? <br></h4>
+                                                                <p>Any lost item returned will be made available for pick up in the Delegate Resource Centre.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Who do I contact in case of an emergency?<br></h4>
+                                                                <p>Your faculty advisor should be your primary point of contact for all cases of emergency. If you wish to directly address the issue with the conference staff, please approach your Daises or any of our staff.</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    <!--  <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingThree">
+                                                          <h4 style="color:rgb(95,166,255);" style="color:rgb(0,12,132);" class="panel-title">
+                                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                                              About the dashboard
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">What is the Dashboard?<br></h4>
+                                                                <p>The SSUNS Dashboard will provide a place for Faculty Advisors to access information relevant to their delegation. Further, Faculty Advisors can input the names and assignments of their delegates (this is useful for the creation of badges), and delegates can submit their position papers.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">How to access the Dashboard?<br></h4>
+                                                                <p>On the front page of the website, there are two new buttons: "Sign Up for the Dashboard" and "Login to the Dashboard." You must register before you login to the Dashboard.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Registering for the Dashboard<br></h4>
+                                                                <p>On the front page of the website, click on the "Sign Up for the Dashboard" button. Fill in the information (use your Faculty Advisor Email provided during the registration as the email in the form). After you submit a valid form, a confirmation email will be sent to the email you provided.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Logging into the Dashboard<br></h4>
+                                                                <p>First, make sure you have signed-up for the dashboard and that you have clicked the confirmation link sent to the email you provided. After this, you are able to login to the website using the username and password you specified.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">In the dashboard <br></h4>
+                                                                <p>The front page of the dashboard has information relevant to your delegation. The Position Paper tab is for delegates to submit position papers. The Delegate Input tab is for the Faculty Advisor to submit delegate names and committee assignments.</p>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                            <div class="panel_body_up">
+                                                                <h4 style="color:rgb(0,12,132);" style="color:rgb(0,12,132);">Further questions and concerns <br></h4>
+                                                                <p>If you have any trouble or questions, feel free to email it@ssuns.org</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </article> <!-- /article -->
+                    <br>
+
+                </div> <!-- /.Testimonials-V1 -->
+
+        </div>
+
+        </div>
+    </section><!-- Our Blog Section Ends -->
+
+
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <!--Footer Upper-->
+        <!--<div class="footer-upper">-->
+            <!--<div class="auto-container">-->
+                <!--<div class="row clearfix">-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget contact-widget">-->
+                            <!--<h3>Contact Us</h3>-->
+                            <!--<div class="text">If you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business.</div>-->
+                            <!--<ul class="info">-->
+                                <!--<li><strong>Email</strong> <a href="mailto:meeton@email.com">meeton@email.com</a></li>-->
+                                <!--<li><strong>Phone</strong> <a href="#">+49 123 456 789</a></li>-->
+                                <!--<li><strong>Fax</strong> +49 123 456 789</li>-->
+                                <!--<li><strong>Website</strong> <a href="http://www.envato.com">http://www.envato.com</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget services-widget">-->
+                            <!--<h3>Our Services</h3>-->
+                            <!--<ul class="links">-->
+                                <!--<li><a href="#">Startup &amp; business meetings</a></li>-->
+                                <!--<li><a href="#">Learning courses for beginners</a></li>-->
+                                <!--<li><a href="#">Phone calling conferences</a></li>-->
+                                <!--<li><a href="#">Business speeches &amp; presentations</a></li>-->
+                                <!--<li><a href="#">Clients &amp; customer meetings</a></li>-->
+                                <!--<li><a href="#">Rent a business conference room</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget support-widget">-->
+                            <!--<h3>Our Support</h3>-->
+                            <!--<ul class="links">-->
+                                <!--<li><a href="#">How to get started?</a></li>-->
+                                <!--<li><a href="#">Frequently asked questions</a></li>-->
+                                <!--<li><a href="#">Customer testimonials</a></li>-->
+                                <!--<li><a href="#">Create a personal account</a></li>-->
+                                <!--<li><a href="#">Create a company account</a></li>-->
+                                <!--<li><a href="#">Help &amp; Support Center</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget newsletter-widget">-->
+                            <!--<h3>Newsletter</h3>-->
+                            <!--<div class="text">We believe that analysis of your company and your customers is key in responding effectively.</div>-->
+
+                            <!--<div class="form">-->
+                                <!--<form method="post" action="/">-->
+                                    <!--<div class="form-group">-->
+                                        <!--<input type="email" name="email" value="" placeholder="Enter your email address" required autocomplete="off">-->
+                                        <!--<button type="submit" name="submit" class="hvr-bounce-to-right"><span class="fa fa-paper-plane"></span></button>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+
+                            <!--<div class="social-links wow fadeInRight" data-wow-delay="1000ms" data-wow-duration="1500ms">-->
+                                <!--<a href="#"><span class="fa fa-facebook-f"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-twitter"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-google"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-pinterest-p"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-instagram"></span></a>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+        <!--Footer Lower-->
+        <div class="footer-lower">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Footer Logo-->
+                    <!--<div class="col-md-4 col-sm-4 col-xs-12 footer-logo wow bounceInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                        <!--<a href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>-->
+                    <!--</div>-->
+
+                    <!--Footer Nav-->
+                    <div class="col-md-12 col-sm-8 col-xs-12 footer-nav wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/about-ssuns/">About</a></li>
+                          <li><a href="/team/">Team</a></li>
+                          <li><a href="/faq/">FAQ</a></li>
+                          <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-sm-12 col-xs-12 footer-logo">Copyright 2017 by SSUNS USG-IT | All rights reserved</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+  </div>
+  <!--End pagewrapper-->
+
+  <!--Scroll to top-->
+  <div class="scroll-to-top"></div>
+
+
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/revolution.min.js' %}"></script>
+  <script src="{% static 'js/bxslider.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+  <script src="{% static 'js/wow.js' %}"></script>
+  <script src="{% static 'js/jquery.countdown.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  </body>
+  </html>

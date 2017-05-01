@@ -1,0 +1,413 @@
+/*------------------------------------------------------------------
+[Color Stylesheet]
+
+Project:    Eventime
+Version:    1.1
+Last change:    3 apr 2015
+Assigned to:    http://themeforest.net/user/chaykovskiy
+Primary use:    Eventime HTML Template 
+-------------------------------------------------------------------*/
+
+
+
+/*!------------------------------ Main color of template #fff200 ------------------------------*/
+
+.navbar-nav>.active>a,
+
+.navbar ul li a.active,
+
+.navbar-nav>li>a:hover,
+
+.description #clock,
+
+.arrow_right:hover,
+
+.arrow_left:hover,
+
+.photo_carousel figure figcaption,
+
+.photo_carousel figure h2 span,
+
+.contact_icon,
+
+.footer .link:hover,
+
+a.navbar-brand:hover,
+
+.navbar_bg_dark .active a,
+
+.texticon,
+
+.count,
+
+.count_plus,
+
+.about_columns .fa,
+
+.about_columns h4,
+
+.contact a,
+
+.copyright span{
+
+    color: #fff200;
+
+}
+
+.eventime_button::before,
+
+.eventime_button:hover::before,
+
+.contact_icon:hover  {
+   
+    background: #fff200;
+
+}
+
+.eventime_button,
+
+.eventime_button:hover,
+
+.first_line,
+
+#sh_carousel .carousel-indicators .active,
+
+.tabs_about .active a,
+
+.tabs_about .graybtn:hover,
+
+.schedule_date,
+
+.photo_carousel_ind.active,
+
+.testimonials_carousel,
+
+.contact_icon,
+
+.sponsor_basic,
+
+.sponsor_featured,
+
+figure.eventime_img figcaption::before,
+
+.eventime_modal .contact_icon:hover,
+
+.center_line {
+
+    border-color: #fff200;
+
+}
+
+/* Gradients */
+
+.reservation,
+
+footer,
+
+.navbar-toggle{
+
+    background: #fff200; /* Old browsers */
+    
+    background: -moz-linear-gradient(-45deg,  #fff200 0%, #efa52d 100%); /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fff200), color-stop(100%,#efa52d)); /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(-45deg,  #fff200 0%,#efa52d 100%); /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(-45deg,  #fff200 0%,#efa52d 100%); /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(-45deg,  #fff200 0%,#efa52d 100%); /* IE10+ */
+   
+    background: linear-gradient(135deg,  #fff200 0%,#efa52d 100%); /* W3C */
+    
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff200', endColorstr='#efa52d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+/*!------ SVG ------ */
+
+.photo_carousel .right_arrow svg:hover,
+
+.photo_carousel .left_arrow svg:hover,
+
+#sh_carousel .right_arrow svg:hover,
+
+#sh_carousel .left_arrow svg:hover,
+
+.light .right_arrow svg:hover,
+
+.light .left_arrow svg:hover,
+
+#home_slider .left_arrow,
+
+#home_slider .right_arrow {
+
+    fill: #fff200;
+
+}
+
+
+
+
+/*!------------------------------ All light part color #fff ------------------------------*/
+
+
+
+
+.navbar,
+
+.navbar a,
+
+.description h2,
+
+.description h3,
+
+.details,
+
+.footer .link,
+
+.tab-content,
+
+.eventime_button,
+
+.tabs_about .active a,
+
+.mask .first_title,
+
+.mask .first_description,
+
+.photo_carousel figure h2,
+
+.reservation_button:hover,
+
+.reservation input[type=text]:focus,
+
+.navbar_bg_dark a,
+
+.buttons a.active,
+
+.contact_information,
+
+.copyright {
+
+    color: #fff;
+
+}
+
+.sponsor_basic,
+
+.sponsor_featured {
+
+    outline-color: #fff;
+
+}
+
+.speakers_row {
+
+    background-color: #fff;
+
+}
+
+
+.tabs_about .graybtn {
+
+    border-color: #fff;
+
+}
+
+/*!------ SVG ------ */
+
+.photo_carousel .right_arrow svg,
+
+.photo_carousel .left_arrow svg,
+
+#home_slider .left_arrow:hover,
+
+#home_slider .right_arrow:hover {
+
+    fill: #fff;
+
+}
+
+
+
+
+/*!------------------------------ Black color #000 ------------------------------*/
+
+
+
+
+a,
+
+a:hover,
+
+.first_title,
+
+.panel a,
+
+.reservation,
+
+.reservation_button,
+
+.contact_icon:hover,
+
+footer,
+
+.navbar_bg .active a,
+
+.schedule_reservation,
+
+.panel-collapse p b {
+
+    color: #000;
+
+}
+
+.eventime_button:hover {
+
+    color: #000 !important;
+
+}
+
+#preloader,
+
+.reservation_button:hover,
+
+.reservation input[type=text]:focus,
+
+.reservation input[type=submit]:hover,
+
+.navbar_bg_dark,
+
+.navbar-toggle .icon-bar {
+
+    background-color: #000;
+
+}
+
+.reservation .first_line,
+
+footer .first_line,
+
+.reservation input,
+
+.reservation_button  {
+
+    border-color: #000;
+
+}
+
+
+
+
+/*!------------------------------ Gray color #838383 ------------------------------*/
+
+
+
+.graybtn,
+
+.accordion_right,
+
+.photo_carousel_ind {
+
+    border-color: #838383;
+
+}
+
+/*!------ SVG ------ */
+#sh_carousel .right_arrow svg,
+
+#sh_carousel .left_arrow svg,
+
+.light .right_arrow svg,
+
+.light .left_arrow svg {
+
+    fill: #838383;
+
+}
+
+.graytxt,
+
+.panel-collapse p,
+
+.arrow_right,
+
+.arrow_left,
+
+.navbar_bg a {
+
+    color: #838383;
+
+}
+
+
+
+
+/*!------------------------------ Background settings | Transparents in RGBA and Background images ------------------------------*/
+
+
+
+
+.nav_mask,
+
+.footer {
+
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+.nav_mask_full {
+
+    background: rgba(0, 0, 0, 1);
+
+}
+
+.fill_mask {
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    background-image: url('../images/mask.svg');
+
+}
+
+.mask {
+
+    background-color: rgba(0, 0, 0, 0.77);
+
+}
+
+/*Images*/
+
+.speakers_image {
+
+    background-image: url('../images/featured_speaker.jpg');
+
+}
+
+.first_image:empty,
+
+.first_image {
+
+    background-image: url('../images/first.jpg');
+
+}
+
+.tabs_about {
+
+    background-image: url('../images/bg_about.jpg');
+
+}
+
+.speakers {
+
+    background-image: url('../images/bg_speakers.jpg');
+
+}
+
+.contact {
+
+    background-image: url('../images/bg_contact.jpg');
+
+}

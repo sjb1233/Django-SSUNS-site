@@ -1,0 +1,537 @@
+{% load staticfiles %}
+<html>
+<head>
+<meta charset="utf-8">
+<title>Specialized Committees</title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/revolution-slider.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js' %}"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header">
+    	<div class="auto-container clearfix">
+        	<!--Logo-->
+              <div class="logo" ><a href="/" ><img style="padding: 5px 5px 5px 5px; max-height:70px; position: relative; top: 10px;" src="{% static 'images/icons/logo.png' %}" alt="SSUNS 2017" title="SSUNS 2017"></a></div>
+            <!-- need to debug shitty sizing issues for the logo -->
+            <!--Main Menu-->
+            <nav class="main-menu">
+                <div class="navbar-header">
+                    <!-- Toggle Button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse clearfix">
+                    <ul class="navigation">
+                      <li> <a href="/">Home</a>
+                             <!-- <ul class="submenu">!
+                                <li><a href="/">Home Style One</a></li>
+                                <li><a href="index-2.html">Home Style Two</a></li>
+                                <li><a href="index-3.html">Home Style Three</a></li>
+                            </ul> -->
+                        </li>
+                        <!-- About -->
+                        <li class="dropdown"><a>About</a>
+                            <ul class="submenu">
+                                <li><a href="/about-ssuns/">SSUNS</a></li>
+                                <li><a href="/about-irsam/">IRSAM</a></li>
+                                <li><a href="/about-montreal/">Montreal</a></li>
+                            </ul>
+                        </li>
+                        <!-- The sec-->
+                        <li><a href="/team/">The Secretariat</a>
+                        <!-- committees -->
+                        <li class="current dropdown"><a>Committees</a>
+                             <ul class="submenu">
+                                  <li><a href="/ga/">General Assemblies and ECOSOC</a></li>
+                                  <li><a href="/sa/">Specialized Agencies</a></li>
+                                  <li><a href="/crisis/">Crises</a></li>
+                            </ul>
+                        </li>
+                        <!-- Useful pages -->
+                        <li class="dropdown"><a>Conference</a>
+                            <ul class="submenu">
+                          <!--      <li><a href="resources.html">Resources</a></li> -->
+                                <li><a href="/faq/">FAQ</a></li>
+                                <!--<li><a href="schedule.html">Schedule</a></li>-->
+                                <li><a href="/travel/">Travel</a></li>
+                            </ul>
+                        </li>
+                          <!--  <ul class="submenu">
+                                <li><a href="speakers.html">Speakers Style One</a></li>
+                                <li><a href="speakers-2-col.html">Speakers Style Two</a></li>
+                                <li><a href="speakers-2-col-styled.html">Speakers Style Three</a></li>
+                                <li><a href="speakers-3-col.html">Speakers Style Four</a></li>
+                                <li><a href="speakers-3-col-styled.html">Speakers Style Five</a></li>
+                                <li><a href="single-speaker.html">Single Speaker</a></li>
+                            </ul> -->
+                        <!-- REgistration -->
+
+                        <li class="dropdown"><a>Registration</a>
+                            <ul class="submenu">
+                                <li><a href="/form/">Register Now</a></li>
+                                <li><a href="/reg/">Registration information</a></li>
+                            </ul>
+                        </li>
+                        <!-- Sponsors We'll introduce this later-->
+                        <!--<li ><a href="/sponsors/">Sponsors</a></li>-->
+
+                        <!-- Contact -->
+                        <li><a href="/contact/">Contact</a></li>
+                        <!-- The sec-->
+                        <li><a href="/sponsors/">Sponsors</a>
+                    </ul>
+                </div>
+            </nav>
+        <!--Main Menu End-->
+        </div>
+    </header>
+    <!--End Main Header -->
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image:url({% static "images/background/specialized.jpeg" %});">
+    	<div class="auto-container">
+            <h1 style="color:rgb(0,12,132);  text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Specialized Agencies</h1>
+        </div>
+    </section>
+
+    <!-- #Testimonial-V2 -->
+    <section id="blog-post" class="testimonials_v2">
+        <div class="container">
+            <div class="row">
+                <!-- .Testimonial-content -->
+                <div class="col-lg-12 testimonials_v2_content">
+                    <h2>More information will be put here as it becomes available</h2>
+                    <!-- article -->
+                    <article>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                                <div class="col-med-4 col-med-4 col-med-4  single_client_left">
+                                                    <img style="max-height: 163px" src="{% static 'images/committees/specialized/Arab League 2011/Julia Yingling Chair.jpg' %}" alt="">
+                                                    <img style="max-height: 163px" src="{% static 'images/committees/specialized/Arab League 2011/Andrew Figueiredo Vice Chair.jpg' %}" alt="">
+                                                    <img style="max-height: 163px" src="{% static 'images/committees/specialized/Arab League 2011/Patricia Sibal Vice Chair.jpg' %}" alt="">
+
+                                                </div>
+                                                <div class="col-med-3 single_client_left">
+                                                  <br>
+                                                    <h5> Julia Yingling (chair), Andrew Figuereido (vice chair), Patricia Sibal (vice chair) </h5>
+                                                    <h4>Arab League 2011</h4>
+                                                </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> It is March of 2011. The world is watching in shock and awe as the Middle East and North Africa, once a stronghold of stable authoritarian regimes, are erupting in protests and civil unrest. There have been protests in countries from Morocco to Oman, and the longstanding regimes of Ben Ali in Tunisia and Mubarak in Egypt have already been toppled. It is in this context that the Arab League must act. Since 1945, the Arab League has been one of the most important platforms for regional collaboration in the Middle East and North Africa, addressing situations from the Lebanese Civil War to various territorial conflicts and economic integration. Delegates from Arab nations will be challenged to explore the underlying causes of the Arab Spring, from the shortcomings of authoritarianism – in a body where many members are still authoritarian – to shifting demographic and economic contexts. The question of Islam in its various political manifestations, from radical jihadist groups to moderate Muslim Democrats, and as a source of both anti- and pro-regime organization. Finally, the body will need to look beyond the Arab World and consider the role of the international community, including the UN and NATO, and what their role in the Arab Spring should be going forward.
+                                                     </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Hungarian Revolution/Alex Nehrbass Chair.png' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Hungarian Revolution/Alix Egoroff Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Hungarian Revolution/Ewa Nizalowska Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Hungarian Revolution/Myles Roth Vice Chair.png' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Alex Nehrbass (chair), Alix Egoroff (vice chair), Ewa Nizalowska (vice chair), Myles Roth (vice chair)</h5>
+                                                  <h4>Hungarian Revolution</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> The Hungarian Revolution began on October 23, 1956, after a student march on the Parliament in Budapest went awry. The killing of a student demonstrator by the State Security Police (the ÁVH) caused the eruption of a massive revolt, and led to the collapse of Hungary’s government. The conflict pitted revolutionaries against both the ÁHV and pro-USSR Communists. Though the Revolution looked to be successful at first, as it initially secured a new government determined to pull out of the Warsaw Pact, the Soviet Politburo reversed its stance on negotiating a withdrawal of its military presence from Hungary, and chose to quash the revolutionary movement. Resistance continued for a couple of weeks but ultimately gave way to the USSR’s forces, which moved quickly to install a regime sympathetic to Soviet interests, and subsequently muted all opposition. By late January of 1957, tensions had largely subsided, and the Revolution seemed entirely defeated.
+
+                                                    </p>
+                                                    <p>
+                                                      The Hungarian Revolution Committee is a fictionalized summit of all relevant factions and characters within the Revolutionary movement of 1956. While the actual Revolution may have failed, delegates will have the opportunity to rewrite history by working to form a stronger, more united Revolutionary force that could prevail against ÁHV and Communist resistance. In order to achieve this end, delegates will have to quell disagreements and tensions internal to the movement, in order to form consensus around three essential topics. The first will address “The Future of Hungary’s Government,” including questions about the structure of government delegates wish to create, and the fundamental constitutional principles such a new state would have to abide by. Secondly, delegates will explore the international dynamics of the time and debate “East/West Alignment”—or how much (and how) to distance the next government from the influence of the USSR and Western capitalist states. Lastly, the committee will have to decide what factions and individuals should be chosen to lead the Revolution and interim government. Here, the goal will be for delegates to form a winning coalition among the differing factions represented in the committee to present a united and strong counterforce to the ÁHV and the USSR. As occasional updates and crises arise throughout the conference, delegates will navigate the various conflicts—both internal and external to the revolutionary movement—in an effort to change history.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-4 col-med-4 col-med-4 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/International Civil Aviation Organization 2001-2002/Mark LeBeau Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/International Civil Aviation Organization 2001-2002/Audun Jawanda Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/International Civil Aviation Organization 2001-2002/Beryl Liu Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/International Civil Aviation Organization 2001-2002/Christopher MacDonald Vice Chair.png' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-12 single_client_left">
+                                                <br>
+                                                  <h5> Mark Lebeau (chair), Audun Jawanda (vice chair), Beryl Liu (vice chair) Cristopher MacDonald (vice chair)</h5>
+                                                  <h4>International Civil Aviation Organization 2001-2002</h4>
+                                              </div>
+                                              <div class="col-lg-12 single_client_right">
+                                                  <p> In the wake of the terrorist attacks on September 11, 2001, the International Civil Aviation Organization faces a world no longer fully confident in the safety of air travel. What must be done to ensure that the so-called “friendly skies” remain that way? Delegates in this committee will have to employ their diplomatic skills to ensure that travellers across the globe are safe from all risks when flying. This committee will be responsible for the future prevention of not only terrorist attacks and hijackings, but also the spread of disease on aircraft and airborne accidents. It is up to you, delegates, to keep the millions of air passengers safe from jet-bridge to jet-bridge.
+
+                                                  </p>
+
+
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/International Court of Justice/Christopher Balian Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px; transform: rotate(90deg);" src="{% static 'images/committees/specialized/International Court of Justice/Dina Jehar Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/International Court of Justice/Raj Birgi Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/International Court of Justice/Olivia Mamane Vice Chair.jpeg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5> Cristopher Balian (chair), Dina Jehhar (vice chair), Raj Birgi (vice chair), Olivia Mamane (vice chair)</h5>
+                                                  <h4>International Court of Justice</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> Constantly asserting its leading role as the legitimate system for resolving disputes on the international level, the International Court of Justice is the primary judiciary organ of the United Nations. Established in June 1945 by the Charter of the United Nations, the ICJ has for principal mandate to settle legal disputes submitted to it by States. In the context of SSUNS 2017, the ICJ committee will be composed of four (4) judges, whose positions will be filled by the Dias Members. The delegates, will be expected to act as Lawyers, or in the terms of the ICJ: Advocates. Their role consists of representing the State they were assigned by performing the duties of submitting written pleadings and delivering oral argument in its defense. They will face the challenge of resorting to the different sources of International Law to convince the judges of their argumentation. </p>
+                                                    <p>In terms of the committee’s progression, the ICJ committee will be presented only one case: Armed Activities on the Territory of the Congo (Democratic Republic of the Congo
+v. Rwanda). The committee will start off as a Crisis committee where delegates will be put first hand into the conflict between the Democratic Republic of the Congo and
+Rwanda. They will be expected to take part into a role-play of the problematic and to simultaneously build their case. The Crisis part of the simulation will be followed by formal sessions during which delegate will argue their case and defend their respective State-party. The simulation will close with one session of mood-court-like debate where the advocates of each party will have the opportunity to present one culminating and final oral argument before the judges. The judges will then have the right to question and challenge each argument and will assess a final judgment.
+</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Isthmian Canal Commission 1903-1904/Jorge Luis Flores Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Isthmian Canal Commission 1903-1904/Alexa Cardenas Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Isthmian Canal Commission 1903-1904/Emma Sutherland Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Isthmian Canal Commission 1903-1904/Stevan Tempesta, Jr Vice Chair.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Jorge Luis Flores (chair), Alexa Cardenas (vice chair), Emma Sutherland (vice chair), Stevan Tempesta Jr (vice chair)</h5>
+                                                  <h4>Isthmian Canal Commission 1903-1904</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> In the year 1904, the Panama Canal opened its gates to the world, inaugurating one of the most impressive engineering projects of history. Proposed as early as the 15th century, the first serious attempts were undertaken by the French towards the end of the 19th century. Plagued with problems, the project was eventually abandoned until it was picked up by the U.S. government in 1903. </p>
+                                                    <p>This committee will place delegates at the heart of negotiations between American, Colombian, and Panamanian interests. Delegates will have to compromise between radically different viewpoints and work through the political, international, and logistical challenges that were ubiquitous during the building of the Canal. Starting in 1903, delegates will simulate the heated debates between the American and the Colombian governments, eventually coming to a mutual agreement over the building of the Panama Canal.  </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Myanmar Constitutional Assembly/Jesse Hartery Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Myanmar Constitutional Assembly/Joanna Morrison Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Myanmar Constitutional Assembly/Noah Powers Vice Chair.png' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Myanmar Constitutional Assembly/Yasmina Male Vice Chair.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Jesse Hartery (chair), Joanna Morrison (vice chair), Noah Powers (vice chair), Yasmina Male (vice chair)</h5>
+                                                  <h4>Myanmar Constitutional Assembly</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> The 21st century Panglong Conference, which began on August 31, 2016, has as its end-goal to amend Myanmar’s 2008 Constitution to adopt a truly federal Constitution. In that sense, the Myanmar Constitutional Assembly committee is set in the future and will challenge delegates to consider the wide array of constitutional issues at play when proposing a new Constitution.
+                                                    </p><p>Our delegates will have the opportunity to discuss the state of Myanmar’s institutional design (particularly the role of the military in the executive and legislative branches), its division of powers between the national government and federated entities, and its approach to minority rights and individual freedoms in a culturally and ethnically diverse country. In doing so, our delegates will also be encouraged to consider the approach taken by other federal states.
+                                                    </p>
+                                                    <p>As members of the national or state governments and leaders of insurgent groups or regional organizations, our delegates will have to confront the pressing constitutional challenges Myanmar faces, while not jeopardizing the democratic gains made in recent years. In 1962, General Ne Win’s coup d’état was justified by the supposed disunity and division caused by federalism in pre-1962 Burma. It is this balance that will characterize the debates during SSUNS 2017.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Native Womens Association of Canada/Morgane Juliat Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Native Womens Association of Canada/Emily Stimpson Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Native Womens Association of Canada/Jemma Lewis Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Native Womens Association of Canada/Shannon Cook Vice Chair.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Morgane Juliat (chair), Emily Stimpson (vice chair), Jemma Lewis  (vice chair), Shannon Cook (vice chair)</h5>
+                                                  <h4>Native Women's Association of Canada</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> The committee of The Native Women’s Association of Canada will give its delegates the opportunity to immerse themselves in the decision-making process and activism of Canada’s legislative process regarding Native Women. Indigenous women in Canada are still facing important issues in our world today. The Native Women’s Association of Canada (NWAC) was founded on the collective goal to enhance, promote and foster the social, economic, cultural and political well-being of indigenous women. This platform for leadership on native women’s rights activism brings together the entire board members, 21 to be exact, as well as members of the Canadian government, in order to continue to promote and engage in native women’s rights. Using an authoritative agenda, NWAC Committee attempts to culminate in resolutions and contribute to the improvement of native women in Canada today. At SSUNS 2017, the NWAC Special Agency (SA) committee will engage in discussions surrounding three challenging and significant topics still affecting native women: the effect of climate change and its environmental impact, access to health care for native women, and missing and murdered indigenous women. We are excited to witness an engaging and creative debate on these complex and ongoing debates on the rights of native women in Canada from delegates.
+
+                                                     </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Paralympic Committee/Samaa Kazerouni Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Paralympic Committee/Nicole Beausoleil Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Paralympic Committee/Nicole Sharma Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Paralympic Committee/Priya Dube Vice Chair.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Samaa Kazerouni (chair), Nicole Beausoleil (vice chair), Nicole Sharma (vice chair), Priya Dube (vice chair) </h5>
+                                                  <h4>Paralympic Committee</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p>
+                                                      The Paralympic Games is an international sporting event involving athletes with various disabilities, including both physical and mental impairments. SSUNS’ Paralympic Committee, comprised of nations participating in and hosting the games, is mandated to ensure a fair, equitable and honest games. In particular, this committee will first discuss the inequalities seen between participation of athletes in developed versus developing countries in the Paralympics. Next, we will discuss the underrepresentation of the Paralympics in the media, including recent criticism of major international broadcasters. Finally, the committee will consider the challenge of maintaining security at the Paralympics, and hopes to produce legislative mechanisms to ensure the safety of all athletes, organizers and spectators.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Peace of Westphalia/Christoph Buhne Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Peace of Westphalia/Emily Dawe Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Peace of Westphalia/Isabella Anderson Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Peace of Westphalia/John Weston Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/specialized/Peace of Westphalia/Vicky Cheng Vice Chair.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Christoph Buhne (chair), Emily Dawe (vice chair), Isabella Anderson (vice chair), John Weston (vice chair), Vicky Cheng (vice chair)</h5>
+                                                  <h4>Peace of Westphalia</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> The year is 1648, and for the last 30 years cruel war has raged across Europe. Begging in a religious dispute between emperor and Protestants, the conflict gradually escalated to involve more and more players, until Germany became a theatre for the ambitions of the great powers. The desire to continue fighting is fading, with seven million lying dead and the majority of states bankrupt. Now all players convene in Westphalia, to come to some sort of agreement on what shape the future of Europe should take. At the table are great kingdoms such as France, Spain and Sweden as well as the myriad members of the Holy Roman Empire on both the Catholic and Protestant side. A pivotal topic of discussion among the delegations is the need to come to a lasting settlement on religious freedoms and self-determination. Terrible religious wars have plagued the empire since the time of Martin Luther, and yet no side has emerged dominant. Previous religious settlements have been signed, yet fail to reflect the changing times and have been all but ignored over the course of the war. Another root cause of the conflict is the fear among states of the Holy Roman Empire of religious and political domination by the Emperor and his mechanisms of state, meaning reforms need to be made if there is to be a foundation of trust for the coming peace. The Electors wish to be assured their independence, and outside kingdoms fear their rivals using the emperor as a puppet for their ambitions. But an eye must also but kept on the future, and this war has brought us to a new age of states that compete not for the glory of god, but rather the power of their own king.  In this new world, where France can fight against Spain rather than for the Pope, clearly needs a new set of rules for ever changing game that is being played.
+
+                                                    </p>
+                                                    <p>Thus you have one task in Westphalia – to bring peace to Europe! To build a bridge across the river of blood that has spilled will be no easy process, but the stakes of failure are too high for failure.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article> <!-- /article -->
+
+
+                </div> <!-- /.Testimonial-V2 -->
+
+
+            </div>
+        </div>
+    </section> <!-- /#Testimonial-V2 -->
+
+    <br/><br/>
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <!--Footer Upper-->
+        <!--<div class="footer-upper">-->
+            <!--<div class="auto-container">-->
+                <!--<div class="row clearfix">-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget contact-widget">-->
+                            <!--<h3>Contact Us</h3>-->
+                            <!--<div class="text">If you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business.</div>-->
+                            <!--<ul class="info">-->
+                                <!--<li><strong>Email</strong> <a href="mailto:meeton@email.com">meeton@email.com</a></li>-->
+                                <!--<li><strong>Phone</strong> <a href="#">+49 123 456 789</a></li>-->
+                                <!--<li><strong>Fax</strong> +49 123 456 789</li>-->
+                                <!--<li><strong>Website</strong> <a href="http://www.envato.com">http://www.envato.com</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget services-widget">-->
+                            <!--<h3>Our Services</h3>-->
+                            <!--<ul class="links">-->
+                                <!--<li><a href="#">Startup &amp; business meetings</a></li>-->
+                                <!--<li><a href="#">Learning courses for beginners</a></li>-->
+                                <!--<li><a href="#">Phone calling conferences</a></li>-->
+                                <!--<li><a href="#">Business speeches &amp; presentations</a></li>-->
+                                <!--<li><a href="#">Clients &amp; customer meetings</a></li>-->
+                                <!--<li><a href="#">Rent a business conference room</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget support-widget">-->
+                            <!--<h3>Our Support</h3>-->
+                            <!--<ul class="links">-->
+                                <!--<li><a href="#">How to get started?</a></li>-->
+                                <!--<li><a href="#">Frequently asked questions</a></li>-->
+                                <!--<li><a href="#">Customer testimonials</a></li>-->
+                                <!--<li><a href="#">Create a personal account</a></li>-->
+                                <!--<li><a href="#">Create a company account</a></li>-->
+                                <!--<li><a href="#">Help &amp; Support Center</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">-->
+                        <!--<div class="footer-widget newsletter-widget">-->
+                            <!--<h3>Newsletter</h3>-->
+                            <!--<div class="text">We believe that analysis of your company and your customers is key in responding effectively.</div>-->
+
+                            <!--<div class="form">-->
+                                <!--<form method="post" action="/">-->
+                                    <!--<div class="form-group">-->
+                                        <!--<input type="email" name="email" value="" placeholder="Enter your email address" required autocomplete="off">-->
+                                        <!--<button type="submit" name="submit" class="hvr-bounce-to-right"><span class="fa fa-paper-plane"></span></button>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+
+                            <!--<div class="social-links wow fadeInRight" data-wow-delay="1000ms" data-wow-duration="1500ms">-->
+                                <!--<a href="#"><span class="fa fa-facebook-f"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-twitter"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-google"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-pinterest-p"></span></a>-->
+                                <!--<a href="#"><span class="fa fa-instagram"></span></a>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+        <!--Footer Lower-->
+        <div class="footer-lower">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Footer Logo-->
+                    <!--<div class="col-md-4 col-sm-4 col-xs-12 footer-logo wow bounceInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                        <!--<a href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>-->
+                    <!--</div>-->
+
+                    <!--Footer Nav-->
+                    <div class="col-md-12 col-sm-8 col-xs-12 footer-nav wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/about-ssuns/">About</a></li>
+                          <li><a href="/team/">Team</a></li>
+                          <li><a href="/faq/">FAQ</a></li>
+                          <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-sm-12 col-xs-12 footer-logo">Copryright 2017 by SSUNS USG-IT | All rights reserved</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top"></div>
+
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/revolution.min.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

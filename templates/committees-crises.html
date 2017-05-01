@@ -1,0 +1,729 @@
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Crisis Committees</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/revolution-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js' %}"></script><![endif]-->
+    <!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+  </head>
+
+  <body>
+  <div class="page-wrapper">
+
+      <!-- Preloader -->
+      <!-- Preloader -->
+      <div class="preloader"></div>
+
+      <header class="main-header">
+      	<div class="auto-container clearfix">
+          	<!--Logo-->
+  <div class="logo" ><a href="/" ><img style="padding: 5px 5px 5px 5px; max-height:70px; position: relative; top: 10px;" src="{% static 'images/icons/logo.png' %}" alt="SSUNS 2017" title="SSUNS 2017"></a></div>
+              <!-- need to debug shitty sizing issues for the logo -->
+              <!--Main Menu-->
+              <nav class="main-menu">
+                  <div class="navbar-header">
+                      <!-- Toggle Button -->
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                  </div>
+
+                  <div class="navbar-collapse collapse clearfix">
+                      <ul class="navigation">
+                        <li> <a href="/">Home</a>
+                               <!-- <ul class="submenu">!
+                                  <li><a href="/">Home Style One</a></li>
+                                  <li><a href="index-2.html">Home Style Two</a></li>
+                                  <li><a href="index-3.html">Home Style Three</a></li>
+                              </ul> -->
+                          </li>
+                          <!-- About -->
+                          <li class="dropdown"><a>About</a>
+                              <ul class="submenu">
+                                  <li><a href="/about-ssuns/">SSUNS</a></li>
+                                  <li><a href="/about-irsam/">IRSAM</a></li>
+                                  <li><a href="/about-montreal/">Montreal</a></li>
+                              </ul>
+                          </li>
+                          <!-- The sec-->
+                          <li><a href="/team/">The Secretariat</a>
+                          <!-- committees -->
+                          <li class="current dropdown"><a>Committees</a>
+                               <ul class="submenu">
+                                    <li><a href="/ga/">General Assemblies and ECOSOC</a></li>
+                                    <li><a href="/sa/">Specialized Agencies</a></li>
+                                    <li><a href="/crisis/">Crises</a></li>
+                              </ul>
+                          </li>
+                          <!-- Useful pages -->
+                          <li class="dropdown"><a>Conference</a>
+                              <ul class="submenu">
+                            <!--      <li><a href="resources.html">Resources</a></li> -->
+                                  <li><a href="/faq/">FAQ</a></li>
+                                  <!--<li><a href="schedule.html">Schedule</a></li>-->
+                                  <li><a href="/travel/">Travel</a></li>
+                              </ul>
+                          </li>
+                            <!--  <ul class="submenu">
+                                  <li><a href="speakers.html">Speakers Style One</a></li>
+                                  <li><a href="speakers-2-col.html">Speakers Style Two</a></li>
+                                  <li><a href="speakers-2-col-styled.html">Speakers Style Three</a></li>
+                                  <li><a href="speakers-3-col.html">Speakers Style Four</a></li>
+                                  <li><a href="speakers-3-col-styled.html">Speakers Style Five</a></li>
+                                  <li><a href="single-speaker.html">Single Speaker</a></li>
+                              </ul> -->
+                          <!-- REgistration -->
+
+                          <li class="dropdown"><a>Registration</a>
+                              <ul class="submenu">
+                                  <li><a href="/form/">Register Now</a></li>
+                                  <li><a href="/reg/">Registration information</a></li>
+                              </ul>
+                          </li>
+                          <!-- Sponsors We'll introduce this later-->
+                          <!--<li ><a href="/sponsors/">Sponsors</a></li>-->
+
+                          <!-- Contact -->
+                          <li><a href="/contact/">Contact</a></li>
+                          <!-- The sec-->
+                          <li><a href="/sponsors/">Sponsors</a>
+                      </ul>
+                  </div>
+              </nav>
+          <!--Main Menu End-->
+          </div>
+      </header>
+    <!--End Main Header -->
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image:url({% static "images/background/crises.jpg" %});">
+        <div class="auto-container">
+            <h2>Crises</h2>
+        </div>
+    </section>
+
+    <!--&lt;!&ndash; #Testimonial-V2 &ndash;&gt;-->
+    <!--<section id="blog-post" class="testimonials_v2">-->
+    <!--<div class="container">-->
+    <!--<div class="row">-->
+    <!--&lt;!&ndash; .Testimonial-content &ndash;&gt;-->
+    <!--<div class="col-lg-12 testimonials_v2_content">-->
+    <!--<h2>General Assemblies and the Economic and Social Council</h2>-->
+    <!--&lt;!&ndash; article &ndash;&gt;-->
+    <!--<article>-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="single_client">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-3 single_client_left">-->
+    <!--&lt;!&ndash; <img src="{% static 'images/testimonial2/1.jpg' %}" alt=""> &ndash;&gt;-->
+    <!--<h4>World Water Forum</h4>-->
+    <!--</div>-->
+    <!--<div class="col-lg-12 single_client_right">-->
+    <!--<p>-->
+    <!--Sed ut perspiciatis unde omnis iste natus er aer or sit voluptatem acc all santium doloremqe laudantium totam. unde omnis iste natus er aer or sit volup tatem acc all santium unde omnis iste natus er aer or sit voluptatem acc all santium</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="single_client">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-3 single_client_left">-->
+    <!--&lt;!&ndash; <img src="{% static 'images/testimonial2/1.jpg' %}" alt=""> &ndash;&gt;-->
+    <!--<h4>Special Political and Decolonization Committee</h4>-->
+    <!--</div>-->
+    <!--<div class="col-lg-12 single_client_right">-->
+    <!--<p>-->
+    <!--Sed ut perspiciatis unde omnis iste natus er aer or sit voluptatem acc all santium doloremqe laudantium totam. unde omnis iste natus er aer or sit volup tatem acc all santium unde omnis iste natus er aer or sit voluptatem acc all santium</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="single_client">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-3 single_client_left">-->
+    <!--&lt;!&ndash; <img src="{% static 'images/testimonial2/1.jpg' %}" alt=""> &ndash;&gt;-->
+    <!--<h4>United Nations General Assemblie Refugees and Migrants</h4>-->
+    <!--</div>-->
+    <!--<div class="col-lg-12 single_client_right">-->
+    <!--<p>-->
+    <!--Sed ut perspiciatis unde omnis iste natus er aer or sit voluptatem acc all santium doloremqe laudantium totam. unde omnis iste natus er aer or sit volup tatem acc all santium unde omnis iste natus er aer or sit voluptatem acc all santium</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="single_client">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-3 single_client_left">-->
+    <!--&lt;!&ndash; <img src="{% static 'images/testimonial2/1.jpg' %}" alt=""> &ndash;&gt;-->
+    <!--<h4>WTO 2001</h4>-->
+    <!--</div>-->
+    <!--<div class="col-lg-12 single_client_right">-->
+    <!--<p>-->
+    <!--Sed ut perspiciatis unde omnis iste natus er aer or sit voluptatem acc all santium doloremqe laudantium totam. unde omnis iste natus er aer or sit volup tatem acc all santium unde omnis iste natus er aer or sit voluptatem acc all santium</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="single_client">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-3 single_client_left">-->
+    <!--&lt;!&ndash; <img src="{% static 'images/testimonial2/1.jpg' %}" alt=""> &ndash;&gt;-->
+    <!--<h4>Commission on Science and Technology</h4>-->
+    <!--</div>-->
+    <!--<div class="col-lg-12 single_client_right">-->
+    <!--<p> &lt;!&ndash;<i class="fa fa-quote-left"></i>&ndash;&gt;-->
+    <!--Sed ut perspiciatis unde omnis iste natus er aer or sit voluptatem acc all santium doloremqe laudantium totam. unde omnis iste natus er aer or sit volup tatem acc all santium unde omnis iste natus er aer or sit voluptatem acc all santium</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="single_client">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-3 single_client_left">-->
+    <!--&lt;!&ndash; <img src="{% static 'images/testimonial2/1.jpg' %}" alt=""> &ndash;&gt;-->
+    <!--<h4>UN Latin America</h4>-->
+    <!--</div>-->
+    <!--<div class="col-lg-12 single_client_right">-->
+    <!--<p> &lt;!&ndash;<i class="fa fa-quote-left"></i>&ndash;&gt;-->
+    <!--Sed ut perspiciatis unde omnis iste natus er aer or sit voluptatem acc all santium doloremqe laudantium totam. unde omnis iste natus er aer or sit volup tatem acc all santium unde omnis iste natus er aer or sit voluptatem acc all santium</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="single_client">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-3 single_client_left">-->
+    <!--&lt;!&ndash; <img src="{% static 'images/testimonial2/1.jpg' %}" alt=""> &ndash;&gt;-->
+    <!--<h4>UN Environment Programme</h4>-->
+    <!--</div>-->
+    <!--<div class="col-lg-12 single_client_right">-->
+    <!--<p>-->
+    <!--Sed ut perspiciatis unde omnis iste natus er aer or sit voluptatem acc all santium doloremqe laudantium totam. unde omnis iste natus er aer or sit volup tatem acc all santium unde omnis iste natus er aer or sit voluptatem acc all santium</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+    <!--<div class="single_client">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-3 single_client_left">-->
+    <!--&lt;!&ndash; <img src="{% static 'images/testimonial2/1.jpg' %}" alt=""> &ndash;&gt;-->
+    <!--<h4>UN Crime Prevention</h4>-->
+    <!--</div>-->
+    <!--<div class="col-lg-12 single_client_right">-->
+    <!--<p>-->
+    <!--Sed ut perspiciatis unde omnis iste natus er aer or sit voluptatem acc all santium doloremqe laudantium totam. unde omnis iste natus er aer or sit volup tatem acc all santium unde omnis iste natus er aer or sit voluptatem acc all santium</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+
+    <!--</article> &lt;!&ndash; /article &ndash;&gt;-->
+
+
+    <!--</div> &lt;!&ndash; /.Testimonial-V2 &ndash;&gt;-->
+
+
+    <!--</div>-->
+    <!--</div>-->
+    <!--</section> &lt;!&ndash; /#Testimonial-V2 &ndash;&gt;-->
+
+    <!-- #Testimonial-V2 -->
+    <section id="blog-post" class="testimonials_v2">
+        <div class="container">
+            <div class="row">
+                <!-- .Testimonial-content -->
+                <div class="col-lg-12 testimonials_v2_content">
+
+                    <!-- article -->
+                    <article>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                                <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                    <img style="max-height: 163px" src="{% static 'images/committees/crises/adhoc/Anna Abraham Chair.jpg' %}" alt="Anna Abraham">
+                                                    <img style="max-height: 163px" src="{% static 'images/committees/crises/adhoc/Skylar Cotnam Vice Chair.jpg' %}" alt="Skylar Cotnam">
+                                                    <img style="max-height: 163px" src="{% static 'images/committees/crises/adhoc/Victor Redko Crisis Director.jpg' %}" alt="Victor Redko">
+                                                    <img style="max-height: 163px" src="{% static 'images/committees/crises/adhoc/Lias Borshan Assistant Crisis Director.jpg' %}" alt="Lias Borshan">
+
+                                                </div>
+                                                <div class="col-med-3 single_client_left">
+                                                  <br>
+                                                    <h5> Anna Abraham (chair), Skylar Cotnam (vice chair), Victor Redko (Crisis director), Lias Borshan (Assistant crisis director)</h5>
+                                                    <h4>Ad hoc</h4>
+                                                </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p>  </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/First Italo-Ethiopian War 1895-1896/Wilder Walker-Stewart Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/First Italo-Ethiopian War 1895-1896/Juliette Lequesne Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/First Italo-Ethiopian War 1895-1896/George Roumeliotis Crisis Director.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/First Italo-Ethiopian War 1895-1896/Frankee Wallace Assistant Crisis Director.png' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5> Wilder Walker-Stewart (chair), Juliette Lequesne (vice chair), George Roumeliotis (crisis director), Frankee Wallace (assistant crisis director)</h5>
+                                                  <h4>First Italo-Ethiopian War 1895-1896</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> The First Italo-Ethiopian War committee will place delegates at the heart of Africa's largest 19th century conflicts. Representing Ethiopian characters, they will be forced to multitask between dealing with natural disasters, famines, warring tribal leaders, and forging alliances with European powers - all the while Italian armies advance upon them. A fast-paced, dynamic committee that will challenge delegates diplomatic and creative skills - this war is not for the faint-hearted. The fate of Ethiopia rests in your hands!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-4 col-med-4 col-med-4 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/JCC Russo-Japanese War 1904-1905/Alex Sirois Russia Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/JCC Russo-Japanese War 1904-1905/Luke Anderson Russia Vice Chair.png' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/JCC Russo-Japanese War 1904-1905/David Marchionni Crisis Director.jpg' %}" alt="">
+
+
+                                              </div>
+                                              <div class="col-med-12 single_client_left">
+                                                <br>
+                                                  <h5> Alex Sirois (chair), Luke Anderson (vice chair), David Marchionni (crisis director)</h5>
+                                                  <h4>Russo-Japanese War: Russia</h4>
+                                              </div>
+                                              <div class="col-lg-12 single_client_right">
+                                                  <p> The Russo-Japanese War is often described as World War Zero setting the stage for all military conflicts for the next century. Russia’s desire to push eastward and complete the Trans Siberian railroad is being met with the equally expansionist Japanese. This resistance has shown some of the frailty and socio-political problems that are present in Tsarist Russia. For Japan, solidifying their grasp on the Korean Peninsula would mean recognition from all developed nations. However, defeat would be disgrace and bankruptcy. Russia on the other hand, victory would be securing a warm water port for year round trade and defeat could lead to revolution.
+                                                  </p>
+                                                  <p>These two actors are set to engage in the largest military engagement ever seen before to man with the most advanced weapons of the day. The fate of these two nations is left to the Russian and Japanese councils. Will history repeat itself, or will Russia claim what is rightfully hers, solidifying her grasp in the Pacific ocean? </p>
+                                                  <br>
+                                              </div>
+                                              <div class="col-med-4 col-med-4 col-med-4 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/JCC Russo-Japanese War 1904-1905/Gordon Barad Japan Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/JCC Russo-Japanese War 1904-1905/Laura Schulz Japan Vice Chair.jpeg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/JCC Russo-Japanese War 1904-1905/Seb Pazdan Japan Assistant Crisis Director .jpg' %}" alt="">
+
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5> Gordon Barad (chair), Laura Schulz (vice chair), Seb Pazdan (assistant crisis director)</h5>
+                                                  <h4>Russo-Japanese War: Japan</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> The Japanese Russian war took place in a time when the world was in a period of transition. A new order of power was being ushered in with the land of the rising sun on the come up. Japan at the time this committee takes place in had begun reaping the fruits of its strategic state plan implemented with the Meiji restoration over thirty years ago. Since then Japan has risen to an economic and military level comparable to the other great western powers. However, at this time its purely conjectural that they have the power status of equals, their track record of engaging with European powers is so far dismal. The question is, whether their sleek and modern military machine and state resources are up to the task to prove to the whole world the glory of the empire. Increasing roadblocks have occurred with the advancement of the nation once it began to seriously threaten other western interests in the Far East. To sustain the growth of the modernized Japan a multitude of resources are needed that the land of Japan simply cannot provide. As a result it is only natural heads will crash over China with the empire of Japan desperate to facilitate its progression, and their emergence onto the scene is beginning to seriously disturb the powers of the old guard. The real question is how will Japan navigate through the uncharted waters of directly competing for dominion in the east and to once again reoccupy their position as a state immune to foreign coercion.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Literary Committee Animal Farm/Nicole Widmer Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Literary Committee Animal Farm/Sabrina Sutherland Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Literary Committee Animal Farm/Arthur Corbel Crisis director.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Literary Committee Animal Farm/Violette Yu Assistand Crisis Director.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5> Nicole Widmer (chair), Sabrina Sutherland (vice chair), Arthur Corbel (crisis director), Violette Yu (assistant crisis director)</h5>
+                                                  <h4>Literary committee on animal farm</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> Dear comrades, </p>
+                                                    <p> Welcome to the Animal Farm! </p>
+                                                    <p> This  crisis  committee  is  set  on  a  farm  within  the  world  described  by  George  Orwell  in  his dystopian  novella Animal  Farm.  The  delegates  will  represent  the  animals  living  on  a  farm neighboring Mr. Jones’ former one – which is now under the control of fellow animals. While all animals  agree  that  overthrowing  their  human  owner  is  the crucial  next  step,  beliefs  about  how equality  between  animals  should  be  implemented  differ.  Delegates  will  have  to  come  up  with creative  solutions  to  establish  a  working  political  system,  in  the  midst  of  an  antagonist  human surrounding.  As  surely  as  2+2=5,  this  committee  will  forever  revolutionize  the  way  you  see animals. The end of the oppression is near.  </p>
+                                                    <p> And always remember, “Four legs good! Two legs bad”! </p>
+                                                     <p> Signed: comrade Squealer </p>
+                                                     <p> In the Name of our Leader, comrade Napoleon</p>
+                                                     <p>Father of all animals </p>
+                                                     <p> Terror of Mankind </p>
+                                                     <p>Protector of the Sheep-fold</p>
+                                                     <p> Ducklings’ friend </p>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Mount Olympus/Nikolas Dolmat Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Mount Olympus/Louis Angus Olivé Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Mount Olympus/Calvin Trottier-Chi Crisis Director.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Mount Olympus/Jorge Saldana Assistant Crisis Director.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Nikolas Dolmat (chair), Louis Angus Olivé (vice chair), Calvin Trottier-Chi (crisis director), Jorge Saldana (assistant crisis director)</h5>
+                                                  <h4>Mount Olympus</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> Welcome Olympians & Champions alike! You are the chosen few to be graced with a seat on my council. </p>
+<p>Mother earth is yours to craft in your image. What destinies will you forge, what myths shall you create? </p>
+<p>Humanity lays beneath us, with a future bright and ready to blossom. I have tasked you with being the vanguards of their ambition. Where will we lead them? Will they still remember the vehicles of their salvation when they reach their harbor? Or will they wrongly believe in their arrogance that their achievements are their own to claim? </p>
+<p>We live in a Golden Age for the Olympians. An age has passed since the Titanomachy -- our decade long, world-splitting battle with the Titans. In victory, we struck them down and chained them to the bowels of the underworld, jailed to face eternal damnation. Should they ever escape, would we have the willpower to face their onslaught? </p>
+<p>Myth and Legends take root in our wake, their development could alter the delicate balance of the mortal world and the very fabric of Olympia. Go forth in my name, build your following and shape our collective future. </p>
+                                                      <p>However, Olympians do heed my word, for danger lurks in every shadow: Those we trust most could lead to our ultimate undoing. </p>
+                                                      <p>Tread lightly. </p>
+                                                    <p>-Zeus
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/NorthWest Rebellion/Adrien Pierre Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/NorthWest Rebellion/Alexandre Vachon Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/NorthWest Rebellion/Marian Daubioul Crisis Director.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/NorthWest Rebellion/Sandrine McDuff Assistant Crisis Director.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Adrien Pierre (chair), Alexandre Vachon (vice chair), Marian Daubioul (crisis director), Sandrine McDuff (assistant crisis director)</h5>
+                                                  <h4>NorthWest Rebellion</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> The date is March 19, 1885. The fugitive Louis Riel creates, along with the Métis leaders, the new Provisional Government of Saskatchewan. In the meantime, there seems to be no end in sight to the Cree uprisings.  The young Canadian Confederation looks worryingly to the growing political unrest. It still seeks to assert its control over  the District of Saskatchewan, where the Métis reluctant to obey Canadian law in their former Red River territory (now known as Manitoba) sought refuge after their failed 1869-70 revolution. Canada knows that the return of Riel, who spearheaded this uprising too, will cause nothing but trouble. And what about the completion of the Canadian Pacific Railway, possibly in peril in case of a generalized First Nations uprising? Too much is at stake. Reinforcement is sent to the North-Western Mounted Police. Tensions are rising: the Northwest Rebellion is about to begin.
+                                                    </p><p>The delegates will have to fight for the independence of their territory against the ever-expanding Canadian dominion. To stand a chance against superior forces, delegates may have to forge or break alliances with the Crees (the Nêhiyawak), the Blackfoot Confederation (Niitsítapi), the clergy or the settlers as well as develop battle strategies – perhaps even choose a new leader among themselves. The committee will be topic-free: who knows what may happen in the Northwest Rebellion. Instead, delegates will prepare and fight from battle to battle, and do everything in their power to win what could be otherwise the last stand of entire nations. Remember the great words of one of the Rebellion leaders, Gabriel Dumont to one of his wounded men: “Courage! As long as you haven’t lost your head, you’re not dead.”
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Pokemon/Tijana Mitrovic Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Pokemon/Vassili Marinis Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Pokemon/Peter Furberg Crisis Director.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Pokemon/Jamie Carey Assistant Crisis Director.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Tijana Mitrovic (chair), Vassili Marinis (vice chair), Peter Furberg (crisis director), Jamie Carey (assistant crisis director)</h5>
+                                                  <h4>Pokemon</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> Do you want to be the very best, like no one ever was? To catch them will be your real test, and to train them will be your cause. You will travel across the land, you will search far and wide.  Each Pokémon will help you understand the power that’s inside.
+                                                    <p> Welcome back to Kanto and the wondrous world of Pokémon. Things have changed quite a bit these last 10 years. Red the champion has gone missing, transportation in Kanto has reverted back into purely running and biking, and Poké-Marts failing to break even are closing all across Kanto. With the S.S. Anne never returning to Vermillion Port and minimal revenue to the Safari Zone, tourism is at an all-time low. Nowadays, reports of heinous crimes and shady business deals take up most of the nightly Poké-News. Indeed, these are troubling times for the people of Kanto, and it almost seems as though there is no hope... </p>
+                                                    <p>You, a body of Kanto’s most notable residents, have been tasked with restoring Kanto to its rightful place as the very best region of the Pokémon World. Do you have the skill it takes to be number one? You will be faced with real time crises, and be forced to address them head on. To find the source of these issues, you must explore the world and maybe find some new Pokémon friends along the way! Only you and your Pokémon can save Kanto, so go out there and catch them all!
+                                                     </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Polish-Lithuanian Teutonic War/Iman Lahouaoula- Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Polish-Lithuanian Teutonic War/Rebecca Spiteri Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Polish-Lithuanian Teutonic War/Eric Krol Crisis Director.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/Polish-Lithuanian Teutonic War/Lennart Nehrbass Assistant Crisis Director.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Iman Lahouaoula (chair), Rebecca Spiteri (vice chair), Eric Krol (crisis director), Lennart Nehrbass (assistant crisis director) </h5>
+                                                  <h4>Polish-Lithuanian Teutonic War</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> Witam! </p> <p>
+                                                      In the year 1401, the Kingdom of Poland and the Grand Duchy of Lithuania have just ended the bloodshed between their two lands.  They have proclaimed peace through the pact of Vilnius and Radom (1401).  Not only has the war ended, but the personal union has been restored in which both the Kingdom of Poland and the Grandy Duchy of Lithuania are to be ruled by one King, Wladyslaw II Jagellio (aka Jogaila).  The personal union dates back from the year 1385, where the two countries first signed the union of Krewo uniting both lands into one United Kingdom of Poland and Lithuania.  Now that the war has ended, an old enemy still threatens their newly joined border; The Knights of the Teutonic Order.  Like the monastic orders of the Holy Land, the Knights of the Teutonic Order were tasked to establish a Catholic crusader state in Eastern Europe in the 13th century.  They were specifically tasked to wage wars against the Grand Duchy of Lithuania to convert the Pagan Duchy into Catholicism.  Since then, the Teutonic Order has been a constant threat.  Located along the Baltic regions in Eastern-Central Europe, it has become a menace that has waged non-religious orientated wars against both the Catholic Kingdom of Poland and the newly Catholicized Grand Duchy of Lithuania.  Now that the two lands have been united into one Catholic Kingdom, one task remains to be fulfilled: the banishment of the Teutonic Knights from Eastern Europe.  The newly assembled Crown Council of Poland and Lithuania, headed by King Wladyslaw II of Poland and his cousin Grand Duke Vytautas of Lithuania have been given an opportunity to do just that.  The threats to this United Kingdom are numerous.  Not only is there a constant Teutonic threat, but the Kingdom of Hungary headed by the Holy Roman Emperor Sigismund has always proved to a constant threat.  Internally, this kingdom faces ethnic tension because of the mix of Lithuanian and Polish peoples who still have the memories of war between their two lands.  The idea of a union is not the most popular in all corners of the Kingdom’s realm.  Additionally, religious tensions still exist between the Catholic and Orthodox people of the Kingdom which even cut through ethnic lines.  With dangers at every corner, King Wladyslaw has been given the role of leading this united council, where the council is to combat against all potential dangers surrounding the Kingdom and finally put an end to the menace that is the Teutonic Knights.  With this feat, the Kingdom has the potential of establishing itself as a regional hegemon for the first time ever.  The task is up to you now - will you rewrite history?  Will this United Kingdom fall like others have in the past, or will you lead this country into a new age of Polish-Lithuanian regional dominance?  The choice is yours.  DLA POLSKA I LITWA!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="single_client">
+                                            <div class="row">
+                                              <div class="col-med-3 col-med-3 col-med-3 col-med-3 single_client_left">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/United Nations Security Council 1961/Madeleine Kausel Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/United Nations Security Council 1961/Taylor Lynn Curtis Vice Chair.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/United Nations Security Council 1961/Oscar Beghin Crisis Director.jpg' %}" alt="">
+                                                  <img style="max-height: 163px" src="{% static 'images/committees/crises/United Nations Security Council 1961/Marie Fester Assistant Crisis Director.jpg' %}" alt="">
+
+                                              </div>
+                                              <div class="col-med-3 single_client_left">
+                                                <br>
+                                                  <h5>Madeleine Kausel (chair), Taylor Lynn curtis (vice chair), Oscar Beghin (crisis director), Marie Fester (assistant crisis director)</h5>
+                                                  <h4>United Nations Security Council 1961</h4>
+                                              </div>
+                                                <div class="col-lg-12 single_client_right">
+                                                    <p> Welcome to the United Nations Security Council honorable ambassadors! The year is 1961 and the Cold War is turning up the heat in the world’s only body of global governance. 1961 will prove to be a tumultuous year for the Council with the severance of diplomatic relations between states, polarization among the permanent members, and the establishment of Peacekeeping operations. With decolonization, the UNSC will also have to address the issue of admitting (or not) new member states to the United Nations. As an ambassador in this committee, you will have to not only maneuver the dynamics of Cold War geopolitics, but also negotiate within the realms of your country’s domestic politics. Your dual-level response will have implications both in and out of the Council’s chamber so think critically and showcase your diplomatic finesse.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article> <!-- /article -->
+
+
+
+                </div> <!-- /.Testimonial-V2 -->
+
+
+            </div>
+        </div>
+    </section> <!-- /#Testimonial-V2 -->
+
+    <br/><br/>
+
+
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <!--Footer Upper-->
+        <!--<div class="footer-upper">-->
+        <!--<div class="auto-container">-->
+        <!--<div class="row clearfix">-->
+
+        <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">-->
+        <!--<div class="footer-widget contact-widget">-->
+        <!--<h3>Contact Us</h3>-->
+        <!--<div class="text">If you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business.</div>-->
+        <!--<ul class="info">-->
+        <!--<li><strong>Email</strong> <a href="mailto:meeton@email.com">meeton@email.com</a></li>-->
+        <!--<li><strong>Phone</strong> <a href="#">+49 123 456 789</a></li>-->
+        <!--<li><strong>Fax</strong> +49 123 456 789</li>-->
+        <!--<li><strong>Website</strong> <a href="http://www.envato.com">http://www.envato.com</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+        <!--<div class="footer-widget services-widget">-->
+        <!--<h3>Our Services</h3>-->
+        <!--<ul class="links">-->
+        <!--<li><a href="#">Startup &amp; business meetings</a></li>-->
+        <!--<li><a href="#">Learning courses for beginners</a></li>-->
+        <!--<li><a href="#">Phone calling conferences</a></li>-->
+        <!--<li><a href="#">Business speeches &amp; presentations</a></li>-->
+        <!--<li><a href="#">Clients &amp; customer meetings</a></li>-->
+        <!--<li><a href="#">Rent a business conference room</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">-->
+        <!--<div class="footer-widget support-widget">-->
+        <!--<h3>Our Support</h3>-->
+        <!--<ul class="links">-->
+        <!--<li><a href="#">How to get started?</a></li>-->
+        <!--<li><a href="#">Frequently asked questions</a></li>-->
+        <!--<li><a href="#">Customer testimonials</a></li>-->
+        <!--<li><a href="#">Create a personal account</a></li>-->
+        <!--<li><a href="#">Create a company account</a></li>-->
+        <!--<li><a href="#">Help &amp; Support Center</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;Footer Widget&ndash;&gt;-->
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">-->
+        <!--<div class="footer-widget newsletter-widget">-->
+        <!--<h3>Newsletter</h3>-->
+        <!--<div class="text">We believe that analysis of your company and your customers is key in responding effectively.</div>-->
+
+        <!--<div class="form">-->
+        <!--<form method="post" action="/">-->
+        <!--<div class="form-group">-->
+        <!--<input type="email" name="email" value="" placeholder="Enter your email address" required autocomplete="off">-->
+        <!--<button type="submit" name="submit" class="hvr-bounce-to-right"><span class="fa fa-paper-plane"></span></button>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
+
+        <!--<div class="social-links wow fadeInRight" data-wow-delay="1000ms" data-wow-duration="1500ms">-->
+        <!--<a href="#"><span class="fa fa-facebook-f"></span></a>-->
+        <!--<a href="#"><span class="fa fa-twitter"></span></a>-->
+        <!--<a href="#"><span class="fa fa-google"></span></a>-->
+        <!--<a href="#"><span class="fa fa-pinterest-p"></span></a>-->
+        <!--<a href="#"><span class="fa fa-instagram"></span></a>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+
+        <!--Footer Lower-->
+        <div class="footer-lower">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Footer Logo-->
+                    <!--<div class="col-md-4 col-sm-4 col-xs-12 footer-logo wow bounceInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+                    <!--<a href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>-->
+                    <!--</div>-->
+
+                    <!--Footer Nav-->
+                    <div class="col-md-12 col-sm-8 col-xs-12 footer-nav wow bounceInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about-ssuns/">About</a></li>
+                            <li><a href="/team/">Team</a></li>
+                            <li><a href="/faq/">FAQ</a></li>
+                            <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-sm-12 col-xs-12 footer-logo">Copryright 2017 by SSUNS USG-IT | All rights reserved</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top"></div>
+
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/revolution.min.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

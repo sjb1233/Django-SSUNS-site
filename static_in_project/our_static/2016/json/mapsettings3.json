@@ -1,0 +1,11 @@
+{
+	"mapZoom": 15,
+	"offsetX": -50,
+	"offsetY": 100,
+	"markerImagePath": "{% static 'assets/img/marker-21x32.png' %}",
+	"markerAddress": "3480 Rue McTavish, Montréal, QC",
+	"balloons": [
+		"McGill University",
+		"Hotel Bonaventure."
+	]
+}
